@@ -1,0 +1,49 @@
+// .btm-primary {
+//   --bs-btn-color: #fff;
+//   --bs-btn-bg: #0068FF;
+//   --bs-btn-border-color: #0068FF;
+//   --bs-btn-hover-color: #fff;
+//   --bs-btn-hover-bg: #0058d9;
+//   --bs-btn-hover-border-color: #0053cc;
+//   --bs-btn-focus-shadow-rgb: 38, 127, 255;
+//   --bs-btn-active-color: #fff;
+//   --bs-btn-active-bg: #0053cc;
+//   --bs-btn-active-border-color: #004ebf;
+//   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+//   --bs-btn-disabled-color: #fff;
+//   --bs-btn-disabled-bg: #0068FF;
+//   --bs-btn-disabled-border-color: #0068FF;
+// }
+
+.btn-primary {
+  @include button-variant(
+    $background: $primary,
+    $border: $primary,
+    $color: $white,
+    $hover-background: $primary-dark,
+    $hover-border: $primary-dark,
+    $hover-color: $white,
+    $active-background: $primary-dark,
+    $active-border: $primary-dark,
+    $active-color: $white,
+    $disabled-background: $gray-4,
+    $disabled-border: $gray-4,
+    $disabled-color: $gray-6
+  );
+}
+
+.btn-outline-primary {
+  @include button-outline-variant(
+    $color: $primary,
+    $color-hover: $white,
+    $active-background: $primary,
+    $active-border: $primary,
+    $active-color: $white
+  );
+  &:disabled,
+  &.disabled {
+    color: $gray-6;
+    border-color: $gray-4;
+    background-color: $gray-4;
+  }
+}
