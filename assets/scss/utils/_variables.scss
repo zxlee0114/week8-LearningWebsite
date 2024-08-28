@@ -574,12 +574,17 @@ $border-color:                $gray-300 !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
+//80 48 20 16 12 8
+
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-xxl:           2rem !default;
+$border-radius:               1.25rem; // 20px  //.375rem !default;
+$border-radius-tiny:          .5rem;   // 8px   //new
+$border-radius-xs:            .75rem;  // 12px  //new
+$border-radius-sm:            1rem;    // 16px  //.25rem !default; 
+$border-radius-medium:        1.25rem; // 20px  //new
+$border-radius-lg:            3rem;    // 48px  //.5rem !default;
+$border-radius-xl:            5rem;    // 80px  //1rem !default;
+$border-radius-xxl:           6.25rem; // 100px //2rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
