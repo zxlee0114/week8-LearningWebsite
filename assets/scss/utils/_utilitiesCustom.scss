@@ -201,7 +201,161 @@ $utilities: map-merge(
         pill: var(--#{$prefix}border-radius-pill)
       )
     ),
-    // scss-docs-end utils-border-radius
+    // scss-docs-start utils-borders
+    "border": (
+      responsive: true,  
+      property: border,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-top": (
+      responsive: true,
+      property: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-end": (
+      responsive: true,
+      property: border-right,
+      class: border-end,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-bottom": (
+      responsive: true,
+      property: border-bottom,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-width": (
+      responsive: true,
+      property: border-width,
+      class: border,
+      values: $border-widths
+    ),
+    "border-opacity": (
+      responsive: true,
+      css-var: true,
+      class: border-opacity,
+      values: (
+        10: .1,
+        25: .25,
+        50: .5,
+        75: .75,
+        100: 1
+      )
+    ),
+    // scss-docs-end utils-borders
+    // Sizing utilities
+    // scss-docs-start utils-sizing
+    "width": (
+      responsive: true,
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "max-width": (
+      responsive: true,
+      property: max-width,
+      class: mw,
+      values: (100: 100%)
+    ),
+    "viewport-width": (
+      responsive: true,
+      property: width,
+      class: vw,
+      values: (100: 100vw)
+    ),
+    "min-viewport-width": (
+      responsive: true,
+      property: min-width,
+      class: min-vw,
+      values: (100: 100vw)
+    ),
+    "height": (
+      responsive: true,
+      property: height,
+      class: h,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "max-height": (
+      responsive: true,
+      property: max-height,
+      class: mh,
+      values: (100: 100%)
+    ),
+    "viewport-height": (
+      responsive: true,
+      property: height,
+      class: vh,
+      values: (100: 100vh)
+    ),
+    "min-viewport-height": (
+      responsive: true,
+      property: min-height,
+      class: min-vh,
+      values: (100: 100vh)
+    ),
+    // scss-docs-end utils-sizing
+    // scss-docs-start utils-position
+    "position": (
+      responsive: true,
+      property: position,
+      values: static relative absolute fixed sticky
+    ),
+    "top": (
+      responsive: true,
+      property: top,
+      values: $position-values
+    ),
+    "bottom": (
+      responsive: true,
+      property: bottom,
+      values: $position-values
+    ),
+    "start": (
+      responsive: true,
+      property: left,
+      class: start,
+      values: $position-values
+    ),
+    "end": (
+      responsive: true,
+      property: right,
+      class: end,
+      values: $position-values
+    ),
+    "translate-middle": (
+      responsive: true,
+      property: transform,
+      class: translate-middle,
+      values: (
+        null: translate(-50%, -50%),
+        x: translateX(-50%),
+        y: translateY(-50%),
+      )
+    ),
+    // scss-docs-end utils-position
   ),
   $utilities
 );
