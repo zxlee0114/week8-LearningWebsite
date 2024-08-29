@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <!-- banner -->
+      <!-- section-1 -->
+      <section class="banner-bg">
+        <div class="banner-deco">
+          <div class="container">
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ul class="breadcrumb list-unstyled">
+                <li class="breadcrumb-item">
+                  <a class="text-decoration-none text-gray-8" href="#"
+                    >所有課程</a
+                  >
+                </li>
+                <li
+                  class="breadcrumb-item active text-gray-8"
+                  aria-current="page"
+                >
+                  程式課程
+                </li>
+              </ul>
+            </nav>
+            <h2 class="banner-title fs-2 fs-lg-1 fw-bold">程式課程</h2>
+            <!-- 程式課程 Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="btn btn-primary rounded-2 py-3 px-4" href="#"
+                    >所有程式</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">網頁開發</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">資料科學</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">行動版開發</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">程式語言</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">遊戲開發</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#"
+                    >資料庫設計與開發</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">軟體測試</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">軟體開發工具</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="btn rounded-2 swiper-item" href="#">無程式碼開發</a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 列表 & course-cards-swiper -->
+      <!-- section-2 -->
+      <section class="section-2-bg">
+        <div class="container">
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
