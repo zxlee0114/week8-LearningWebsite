@@ -1,0 +1,34 @@
+i{
+    color: $gray-8;
+}
+.banner{
+    background-image: url("/assets/images/hero-5.png");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+.banner-wrapper{
+    padding-top: 320px;
+}
+.banner-teacher-img-bg{
+    height: 240px;
+    width: 240px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 1000px;
+}
+.banner-feature-item{
+    border: transparent 1px solid;
+}
+.px-6{
+    border-right: 1px solid $gray-6;
+    border-left: 1px solid $gray-6;
+}
+
+// .header-outline-circle-sm{
+//     height: 40px;
+//     width: 40px;
+//     background: transparent;
+//     border: 1px solid #4B4B4B;
+//     border-radius: 50%;
+// }
