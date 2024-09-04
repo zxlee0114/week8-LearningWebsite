@@ -456,14 +456,16 @@ $spacers: (
 
   m : $spacer * 2.5, // 40px //2024-08-29
   xl: $spacer * 5,   // 80px
+  xxl: $spacer *10,  //160px //2024-09-01
   huge: $spacer * 6.25, // 100px //2024-08-29
   XHuge: $spacer * 7.5, // 120px //2024-09-04
+
 
   // 1: $spacer * .25,
   // 2: $spacer * .5,
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,
+  // 5: $spacer * 3,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -522,7 +524,8 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 // Style p element.
 
 // $paragraph-margin-bottom:   1rem !default;
-$paragraph-margin-bottom: 0;
+$paragraph-margin-bottom:   0;
+
 
 // Grid breakpoints
 //
@@ -722,13 +725,13 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-// $headings-margin-bottom:      $spacer * .5 !default;
-$headings-margin-bottom: 0;
-$headings-font-family: null !default;
-$headings-font-style: null !default;
-$headings-font-weight: 600; //500 !default;
-$headings-line-height: 1.2 !default;
-$headings-color: inherit !default;
+//$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        600; //500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
