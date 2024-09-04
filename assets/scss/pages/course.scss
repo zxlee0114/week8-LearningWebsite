@@ -1,0 +1,309 @@
+// banner
+// section-1
+.banner-bg {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $gray-1;
+  @media screen and (min-width: 992px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .banner-title {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 992px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  //   flower 偽元素
+  &::before {
+    content: "";
+    background-image: url(/assets/images/deco/flower-2.png);
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    left: 0;
+    top: -95px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    background-image: url(/assets/images/deco/flower-2.png);
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    right: 24px;
+    top: 100px;
+    z-index: -1;
+  }
+}
+
+.banner-deco {
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(/assets/images/deco/polygon-2.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 198px;
+    top: 60px;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    background-image: url(/assets/images/deco/polygon-2.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 360px;
+    top: 20px;
+    z-index: 0;
+  }
+}
+
+// 程式課程 Swiper
+.swiper-item {
+  padding: 12px 16px;
+  background-color: $white;
+  color: $gray-8;
+  text-wrap: nowrap;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+// 列表 & course-cards-swiper
+// section-2
+.section-2-bg {
+  padding-top: 40px;
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+}
+
+// 課程導覽列
+.course-nav-link {
+  display: block;
+  padding: 16px 0;
+  color: $gray-8;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.course-nav-item-bottom-line {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  &:hover::after {
+    background-color: $primary;
+  }
+}
+
+.course-nav-link-active {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: $primary;
+    border-radius: 10px;
+  }
+  font-weight: $font-weight-semibold;
+  color: $primary;
+}
+
+// 課程卡片 Swiper
+.card {
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
+  border: 0;
+}
+
+// .course-card {
+//   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
+//   border: 0;
+// }
+
+.course-card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-card-footer {
+  border-top: 1px solid $gray-4;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fw-bold-700 {
+  font-weight: $font-weight-bold; // 700
+}
+
+.text-style-1 {
+  color: rgba(128, 128, 128, 1);
+  text-decoration: line-through;
+}
+
+.text-style-2 {
+  color: rgba(128, 128, 128, 1);
+}
+
+// Swiper-button
+.course-swiper-button-prev {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  background-color: $white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+// 程式頂尖講師
+.teacher-card-body {
+  padding: 16px;
+  text-align: center;
+}
+
+.teacher-card-footer {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $gray-4;
+}
+
+// 相關課程
+
+.filter {
+  color: $gray-8;
+  font-weight: $font-weight-semibold;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.filter-active {
+  color: $primary;
+  font-weight: $font-weight-semibold;
+}
+
+// RWD mobile-card-1
+.mobile-card {
+  border-bottom: 1px solid $gray-4;
+  padding-bottom: 24px;
+}
+
+// pagination
+.pagination-item {
+  display: block;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  padding: 4px 0;
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+    padding: 12px 0;
+  }
+}
+
+// 一探究竟
+.category-bg {
+  padding: 40px 0;
+  @media screen and (min-width: 992px) {
+    padding: 120px 132px;
+  }
+}
+
+.category-bg-color {
+  padding: 80px 16px;
+  background-color: $primary;
+  border-radius: 80px;
+  @media screen and (min-width: 992px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.icon-bg-1 {
+  background-color: rgba(255, 153, 79, 1);
+}
+
+.icon-bg-2 {
+  background-color: rgba(255, 155, 173, 1);
+}
+
+.icon-bg-3 {
+  background-color: rgba(84, 223, 242, 1);
+}
+
+.icon-bg-4 {
+  background-color: rgba(207, 147, 255, 1);
+}
+
+.icon-bg-5 {
+  background-color: rgba(94, 94, 94, 1);
+}
+
+.icon-bg-6 {
+  background-color: rgba(86, 79, 253, 1);
+}
+
+.icon-bg-7 {
+  background-color: rgba(82, 233, 188, 1);
+}
+
+.text-gray {
+  color: rgba(110, 116, 133, 1);
+}
+
+//
+.swiper-pagination {
+  width: 232px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: $gray-400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .swiper-prev:hover {
+    background: $gray-400;
+    color: #ffff;
+  }
+}
