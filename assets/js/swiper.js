@@ -1,6 +1,6 @@
 // import Swiper bundle with all modules installed
 // 匯入全部模組
-import Swiper from 'swiper/bundle';
+import Swiper from "swiper/bundle";
 
 // Start
 
@@ -125,13 +125,13 @@ const courseSwiper = new Swiper(".course-card-swiper", {
 });
 
 // 熱門主題 Swiper
-const hotSwiper = new Swiper(".hotSwiper", {
+const hotTopicSwiper = new Swiper(".hotTopicSwiper", {
   slidesPerView: 1, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 16px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
 
-  loop: false, // 循環播放
+  loop: true, // 循環播放
 
   // 左右箭頭 功能設定
   navigation: {
