@@ -1,5 +1,6 @@
-// import Swiper JS
-import Swiper from "swiper";
+// import Swiper bundle with all modules installed
+// 匯入全部模組
+import Swiper from 'swiper/bundle';
 
 // Start
 
