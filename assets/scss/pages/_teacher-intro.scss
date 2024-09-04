@@ -1,28 +1,91 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 i{
     color: $gray-8;
 }
+
 .banner{
-    background-image: url("/assets/images/hero-5.png");
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
+    background-image: url("/assets/images/hero-sm-5.png");
+    // background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    @media (min-width: 576px) {
+        background-image: url("/assets/images/hero-5.png");
+    }
 }
-.banner-wrapper{
-    padding-top: 320px;
-}
-.banner-teacher-img-bg{
-    height: 240px;
-    width: 240px;
-    background-color: white;
-    border: 4px solid black;
+//不知為何會造成跑版
+
+// .banner-teacher-img{
+//     // width: 200px;
+//     @media (max-width:992px) {
+//         width: 150px;
+//     }
+//     @media (max-width:768px) {
+//         width: 100px;
+//     }
+//     @media (max-width:576px) {
+//         width: 60px;
+//     }
+// }
+
+
+// .banner-teacher-img-bg{
+//     // height: 240px;
+//     // width: 240px;
+//     background-color: white;
+//     // border: 4px solid black; //暫時用黑的方便排版
+//     // border-radius: 1000px;
+//     position: absolute;
+//     // top: 0;
+//     // right: 0;
+//     // transform: translateY(-50%);
+
+//     @media (max-width:992px) {
+//         height: 180px;
+//         width: 180px;
+//     }
+//     @media (max-width:768px) {
+//         height: 120px;
+//         width: 120px;
+//         // position: absolute;
+//         // top: 0;
+//         // right: 50;
+//     }
+//     @media (max-width:576px) {
+//         height: 80px;
+//         width: 80px;
+//         // position: absolute;
+//         // top: 0;
+//         // right: 50;
+//     }
+// }
+
+.banner-social-icon-bg{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid $gray-8;
     border-radius: 1000px;
+    opacity: 70;
 }
+
 .banner-feature-item{
     border: transparent 1px solid;
 }
-.px-6{
+.banner-feature-item-border{
     border-right: 1px solid $gray-6;
     border-left: 1px solid $gray-6;
+}
+
+.banner-icon{
+    transition: .3s;
+}
+
+.banner-icon a:hover{
+    transform: scale(1.1);
 }
 
 // .header-outline-circle-sm{
