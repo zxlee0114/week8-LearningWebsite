@@ -33,6 +33,15 @@
       padding-top: 0px;
     }
 }
+.sticky-top-custom2{
+  top:154px;
+  @media(max-width: 992px){
+    top:66px;
+  }
+}
+.sticky-top-custom{
+  top:254px;
+}
 .gradient-overlay {
   position: relative;
 }
@@ -83,7 +92,4 @@
 }
 .bi.bi-cart3::before {
   vertical-align: 0.1em;
-}
-.sticky-top-custom{
-  top:100px;
 }
