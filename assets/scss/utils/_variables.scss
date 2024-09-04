@@ -450,9 +450,10 @@ $spacers: (
   7: $spacer * 2,    // 32px
   8: $spacer * 3,    // 48px
 
-  m : $spacer * 2.5,   // 40px //2024-08-29
-  xl: $spacer * 5,     // 80px
-  huge: $spacer * 6.25 // 100px //2024-08-29
+  m : $spacer * 2.5, // 40px //2024-08-29
+  xl: $spacer * 5,   // 80px
+  huge: $spacer * 6.25, // 100px //2024-08-29
+  XHuge: $spacer * 7.5, // 120px //2024-09-04
 
   // 1: $spacer * .25,
   // 2: $spacer * .5,

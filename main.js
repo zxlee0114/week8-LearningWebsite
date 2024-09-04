@@ -6,5 +6,6 @@ import 'swiper/css/bundle';
 
 // import Swiper JS
 import './assets/js/swiper.js'
+// import './assets/js/stickyNav.js' //2024-09-04 失敗
 
 console.log("Hello world!");
