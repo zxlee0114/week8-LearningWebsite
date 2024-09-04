@@ -1,4 +1,103 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+// navbar 關閉按鈕(X) 參考來源：https://forum.bootstrapstudio.io/t/change-hamburger-icon/8990/13
+
+.navbar-toggler-icon {
+  background-image: none!important;
+  background-color: $gray-8;
+  height: 3px;
+  width: 25px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+  border-radius: $border-radius-pill;
 }
+
+.navbar-toggler-icon::before {
+  display: block;
+  background-color: $gray-8;
+  height: 3px;
+  content: "";
+  position: relative;
+  top: -7px;
+  transition: all 0.15s ease-out;/*taken down to hide quicker*/
+  transform-origin: center;
+  border-radius: $border-radius-pill;
+}
+
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: $gray-8;
+  height: 3px;
+  content: "";
+  position: relative;
+  top: 4px;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+  border-radius: $border-radius-pill;
+}
+
+.navbar .navbar-toggler-icon,
+.navbar .navbar-toggler-icon::before,
+.navbar .navbar-toggler-icon::after {
+  background-color: $gray-8;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-90deg) translateX(7px);
+}
+
+//結束
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem;
+}
+
+.logo {
+  height: 1.25rem;
+  @media (min-width:992px) {
+    height: 2rem;
+  }
+}
+
+.navbar-positon {
+  // z-index: 5;
+  top: 0;
+  @media (min-width:992px) {
+    top:40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.navbar-shadow {
+  @media (min-width:992px) {
+    box-shadow: 0px 2px 40px 0px #0068FF1A;
+  }
+}
+.navbar-collapse-position {
+  position: absolute;
+  bottom: 0;
+  @media (min-width:992px) {
+    position: relative;
+  }
+}
+
+.navbar-dropdown-show {
+  display: block;
+  @media (min-width:992px) {
+    display: none;
+  }
+}
+
+// 搭配stickyNav.js //2024-09-04 失敗
+// .fixed-nav nav {
+//   position: fixed;
+//   box-shadow: 0 5px rgba(0,0,0,0.1);
+// }
