@@ -7,6 +7,7 @@
     <title>intro</title>
   </head>
   <body class="bg-gray-1" data-bs-spy="scroll" data-bs-target="#navbar-example2">
+    <%- include('./layout/header'); -%>
     <section class="intro-title">
       <div class="container">
         <nav aria-label="breadcrumb">
@@ -133,7 +134,7 @@
       </div>
     </section>
     <section class="intro-nav" id="intro-nav">
-      <div class="intro-navbar bg-white border-1 border-bottom border-gray-4 sticky-top">
+      <div class="intro-navbar bg-white border-1 border-bottom border-gray-4 sticky-top sticky-top-custom2">
         <div class="container">
           <nav id="navbar-example2" class="navbar justify-content-start py-0">
             <ul class="nav nav-pills">
@@ -211,5 +212,6 @@
       </div>
     </section>
     <script type="module" src="../main.js"></script>
+    <%- include('./layout/footer'); -%>
   </body>
 </html>
