@@ -2,7 +2,7 @@
 // section-1
 .banner-bg {
   position: relative;
-  z-index: 1;
+  z-index: -3;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $gray-1;
@@ -30,22 +30,34 @@
     position: absolute;
     left: 0;
     top: -95px;
-    z-index: -1;
+    z-index: -2;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
 
   &::after {
     content: "";
     background-image: url(/assets/images/deco/flower-2.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 560px;
     height: 560px;
     position: absolute;
     right: 24px;
-    top: 100px;
-    z-index: -1;
+    top: 40px;
+    z-index: -2;
+
+    @media screen and (max-width: 992px) {
+      width: 240px;
+      height: 240px;
+      top: 0;
+      right: -40px;
+    }
   }
 }
 
+// polygon 偽元素
 .banner-deco {
   position: relative;
   &::before {
@@ -56,8 +68,8 @@
     height: 60px;
     position: absolute;
     left: 198px;
-    top: 60px;
-    z-index: 0;
+    top: 40px;
+    z-index: -1;
   }
 
   &::after {
@@ -69,7 +81,10 @@
     position: absolute;
     right: 360px;
     top: 20px;
-    z-index: 0;
+    z-index: -1;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
 }
 
@@ -146,11 +161,6 @@
   border: 0;
 }
 
-// .course-card {
-//   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
-//   border: 0;
-// }
-
 .course-card-body {
   display: flex;
   justify-content: space-between;
@@ -178,14 +188,88 @@
 }
 
 // Swiper-button
+.course-swiper-button-next {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  background-color: $white;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: $primary;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .course-swiper-button-prev {
   display: inline-block;
   width: 56px;
   height: 56px;
   padding: 16px;
   background-color: $white;
+  border-radius: 12px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  // box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: $primary;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.course-swiper-button-arrow-right-short {
+  color: $primary;
+  &:hover {
+    color: $white;
+  }
+}
+
+.course-swiper-button-arrow-left-short {
+  color: $primary;
+  &:hover {
+    color: $white;
+  }
+}
+
+.course-swiper-button-next-position {
+  position: absolute;
+  top: 50%;
+  right: -28px;
+  z-index: 1;
+  transform: translate(0, -50%);
+}
+
+.course-swiper-button-prev-position {
+  position: absolute;
+  top: 50%;
+  left: -28px;
+  z-index: 1;
+  transform: translate(0, -50%);
+}
+
+// 熱門主題
+.navigation-arrow-left-short {
+  color: $gray-6;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.navigation-arrow-right-short {
+  color: $gray-6;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 20px;
 }
 
 // 程式頂尖講師
@@ -202,7 +286,6 @@
 }
 
 // 相關課程
-
 .filter {
   color: $gray-8;
   font-weight: $font-weight-semibold;
