@@ -46,3 +46,8 @@
 }
 
 // heroSwiper - end
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: $border-radius-pill;
+}
