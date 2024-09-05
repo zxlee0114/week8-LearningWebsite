@@ -1,0 +1,2927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>intro</title>
+    <script type="module" crossorigin src="/week8-LearningWebsite/assets/main-98527e9b.js"></script>
+    <link rel="stylesheet" href="/week8-LearningWebsite/assets/main-e0df2fbb.css">
+  </head>
+  <body class="bg-gray-1" data-bs-spy="scroll" data-bs-target="#navbar-example2">
+    <nav class="px-xl-3 pb-lg-4 pt-lg-m bg-white fixed-top" id="navbar">
+  <!--  position-fixed  navbar-positon  -->
+  <header class="container-lg pe-4 px-lg-5 rounded-lg-pill border-1 bg-white  navbar-shadow">
+      <div class="navbar navbar-expand-lg py-3 py-lg-4">
+          <div class="container px-0 px-lg-5 justify-content-start">
+            <a class="navbar-brand me-0 me-xl-6" href="#"><img src="data:image/png;base64,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" alt="Logo" class="logo"></a>
+            
+            <div class="order-lg-3 ms-auto d-flex align-items-center">
+              <button class="btn btn-outline-gray-8 px-3 py-2 px-lg-2 px-xl-3 border-0 lh-1"><span class="material-symbols-outlined">notifications</span></button>
+              <button class="btn btn-outline-gray-8 px-3 py-2 px-lg-2 px-xl-3 border-0 lh-1 me-lg-1 ms-xl-3 me-xl-3"><span class="material-symbols-outlined">shopping_cart</span></button>
+              <a href="#" class="btn btn-primary d-none d-lg-inline-block px-2 py-4 px-xl-7 rounded-3">登入 / 註冊</a>
+            </div>
+  
+            <button class="navbar-toggler collapsed rounded-2 p-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0 order-lg-2" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-none d-lg-inline-block px-3 px-xl-6" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">探索</a>
+                  <ul class="dropdown-menu navbar-dropdown-show" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="input-group d-none d-lg-flex border rounded-3" style="width: 425px;">
+                <span class="input-group-text rounded-start-3 border-0 bg-white px-2">
+                  <span class="material-symbols-outlined">search</span>
+                </span>
+                <input type="text" class="form-control py-5 px-0 border-0" placeholder="搜尋各種音樂、數學、程式及設計課程" aria-label="搜尋各種音樂、數學、程式及設計課程" aria-describedby="button-addon2">
+                <div class="rounded-end-3 border-0 d-flex justify-content-center align-items-center py-2 px-2">
+                  <button class="btn btn-primary rounded-2 h-100" type="button" id="button-addon2">搜尋</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </header>
+</nav>    <section class="intro-title">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-6 mb-lg-8">
+            <li class="breadcrumb-item">
+              <a href="#" class="link-gray-8 text-decoration-none">所有課程</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="link-gray-8 text-decoration-none">程式</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">網頁前端</li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-lg-7 mb-6 mb-lg-0">
+            <img
+              src="/week8-LearningWebsite/assets/hero-4-af576b65.png"
+              class="img-fluid h-100 rounded-4"
+              alt="hero-4"
+            />
+          </div>
+          <div class="col-lg-5 d-flex flex-column">
+            <div class="d-flex mb-4 mb-lg-6">
+              <a
+                class="btn btn-primary-L text-primary fs-sm d-block me-2"
+                href="#"
+                role="button"
+                >程式開發</a
+              >
+              <a
+                class="btn btn-primary-L text-primary fs-sm d-block me-2"
+                href="#"
+                role="button"
+                >小白友善</a
+              >
+              <a
+                class="btn btn-primary-L text-primary fs-sm d-block"
+                href="#"
+                role="button"
+                >網站設計</a
+              >
+            </div>
+            <h1 class="fs-2 fs-lg-1 mb-2 mb-lg-4">
+              使用 HTML、CSS 開發一個網站
+            </h1>
+            <p class="fs-sm fs-lg-base text-gray-8 mb-2 mb-lg-4">
+              為你打造就算沒有程式基礎，也能夠逐步學習獲得網頁排版技巧的紮實觀念，六角學院的講師將協助你成就更好的自己！
+            </p>
+            <p class="fs-sm fs-lg-base mb-6 mb-lg-0">
+              16,390 人 <span class="text-gray-8">已註冊</span>
+            </p>
+            <div class="d-flex mt-lg-auto">
+              <button
+                class="btn btn-outline-primary py-3 px-4 rounded-2 me-2 w-50 w-lg-25"
+                href="#"
+                role="button"
+              >
+                <i class="bi bi-bookmark-fill me-2"></i>收藏課程
+              </button>
+              <button
+                class="btn btn-outline-primary py-3 px-4 rounded-2 w-50 w-lg-25"
+                href="#"
+                role="button"
+                disabled
+              >
+                <i class="bi bi-share-fill me-2"></i>分享課程
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="container pt-4 pt-lg-xl pb-6 pb-lg-0 position-relative">
+        <div
+          class="container feature-container border-1 border-gray-4 shadow rounded-4"
+        >
+          <div class="d-flex flex-column flex-lg-row p-4 p-lg-6">
+            <div class="w-100 w-lg-25 py-6 py-lg-4 px-6 border-end-lg">
+              <div class="d-flex mb-2">
+                <img
+                  src="data:image/png;base64,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"
+                  class="object-fit-contain"
+                  style="width: 24px"
+                  alt="hexschool"
+                />
+                <h2 class="fs-base fs-lg-6">六角學院</h2>
+              </div>
+              <p class="fs-sm fs-lg-base text-gray-8">
+                高雄最大線上程式開發學習單位
+              </p>
+            </div>
+            <div class="w-100 w-lg-25 py-6 py-lg-4 px-6 border-end-lg">
+              <div class="d-flex mb-2">
+                <h2 class="fs-base fs-lg-6">
+                  <i class="bi bi-star-fill"></i>4.9
+                </h2>
+              </div>
+              <p class="fs-sm fs-lg-base text-gray-8">13,208 條評論</p>
+            </div>
+            <div class="w-100 w-lg-25 py-6 py-lg-4 px-6 border-end-lg">
+              <div class="d-flex mb-2">
+                <h2 class="fs-base fs-lg-6">3 時 25 分</h2>
+              </div>
+              <p class="fs-sm fs-lg-base text-gray-8">
+                16 個單元，4 個課後學習作業
+              </p>
+            </div>
+            <div class="w-100 w-lg-25 py-6 py-lg-4 px-6">
+              <div class="d-flex mb-2">
+                <h2>
+                  <a
+                    class="btn btn-primary-L text-primary fs-sm d-block me-2"
+                    href="#"
+                    role="button"
+                    >前端開發類別排名第一名 🔥</a
+                  >
+                </h2>
+              </div>
+              <p class="fs-sm fs-lg-base text-gray-8">16,390 人已註冊</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="intro-nav" id="intro-nav">
+      <div class="intro-navbar bg-white border-1 border-bottom border-gray-4 sticky-top sticky-top-custom2">
+        <div class="container">
+          <nav id="navbar-example2" class="navbar justify-content-start py-0">
+            <ul class="nav nav-pills">
+              <li class="nav-item me-6 me-lg-7">
+                <a class="introHeading fs-sm fs-lg-base d-flex flex-column align-items-center" href="#introHeading1">
+                  <p class="py-3 py-lg-4">課程介紹</p>
+                  <div class="introHeading-block"></div>
+                </a>
+              </li>
+              <li class="nav-item me-6 me-lg-7">
+                <a class="introHeading fs-sm fs-lg-base d-flex flex-column align-items-center" href="#introHeading2">
+                  <p class="py-3 py-lg-4">預計單元</p>
+                  <div class="introHeading-block"></div>
+                </a>
+              </li>
+              <li class="nav-item me-6 me-lg-7">
+                <a class="introHeading fs-sm fs-lg-base d-flex flex-column align-items-center" href="#introHeading3">
+                  <p class="py-3 py-lg-4">關於講師</p>
+                  <div class="introHeading-block"></div>
+                </a>
+              </li>
+              <li class="nav-item me-6 me-lg-7">
+                <a class="introHeading fs-sm fs-lg-base d-flex flex-column align-items-center" href="#introHeading4">
+                  <p class="py-3 py-lg-4">購課前問答</p>
+                  <div class="introHeading-block"></div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container py-m py-lg-xl mb-xl">
+        <div class="row">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example2"
+            data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true"
+            class="col-lg-8 scrollspy-example"
+            tabindex="0">
+            <div class="introHeading-target" id="introHeading1">
+  <div class="mb-8">
+    <h3 class="fs-6 fs-lg-5 mb-4 mb-lg-6">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+        class="align-baseline d-lg-none"
+        style="width: 16px"
+        alt="flower-5"
+      /><img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+        class="align-top d-none d-lg-inline-block"
+        style="width: 24px"
+        alt="flower-5"
+      />課程介紹
+    </h3>
+    <div class="py-0 py-lg-6 px-0 px-lg-7">
+      <picture>
+        <source
+          srcset="/week8-LearningWebsite/assets/course-sm-detail-1-30e9327d.png "
+          media="(max-width:992px)"
+        />
+        <img
+          src="/week8-LearningWebsite/assets/course-detail-1-659360c9.png"
+          class="img-fluid mb-6 mb-lg-7"
+          alt="course-detail-1"
+        />
+      </picture>
+      <div class="d-flex mb-2 mb-lg-4">
+        <div
+          class="rounded-1 d-none d-sm-block"
+          style="width: 4px; height: 16px; background-color: #0068ff"
+        ></div>
+        <div
+          class="rounded-1 d-block d-sm-none"
+          style="width: 4px; height: 40px; background-color: #0068ff"
+        ></div>
+        <h4 class="ps-2 fs-base">
+          入門前端網頁設計從這裡開始，跨出你的第一步！
+        </h4>
+      </div>
+      <p class="text-gray-8 mb-6 mb-lg-7">
+        如果你也想要踏入前端的世界，歡迎你來到 Hahow
+        與六角學院合作的「前端網頁設計」課程組合，透過一系列前端語言的基礎課程，循序漸進的帶你進入網頁開發的世界。－－而這裡——就是你的第一步！
+      </p>
+    </div>
+    <div class="gradient-overlay">
+      <div class="py-0 pt-lg-6 px-0 px-lg-7">
+        <picture>
+          <source
+            srcset="/week8-LearningWebsite/assets/course-sm-detail-2-e88e1783.png "
+            media="(max-width:992px)"
+          />
+          <img
+            src="/week8-LearningWebsite/assets/course-detail-2-a701762c.png"
+            class="img-fluid mb-6 mb-lg-7"
+            alt="course-detail-1"
+          />
+        </picture>
+        <div class="d-flex mb-2 mb-lg-4">
+          <div
+            class="rounded-1 d-none d-sm-block"
+            style="width: 4px; height: 16px; background-color: #0068ff"
+          ></div>
+          <div
+            class="rounded-1 d-block d-sm-none"
+            style="width: 4px; height: 40px; background-color: #0068ff"
+          ></div>
+          <h4 class="ps-2 fs-base">
+            網頁前端的入門磚，讓我們先從學習 HTML & CSS 開始！
+          </h4>
+        </div>
+        <p class="text-gray-8">
+          如果你還沒有程式基礎背景，HTML、CSS 便是作為網頁開發的起始點。從
+          HTML、 CSS
+          入門學習會是個好主意，這裡的學習曲線不會那麼的陡峭，網頁開發的基礎知識正式從這裡開始！
+        </p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mb-4 mb-lg-6">
+      <button type="button" class="btn btn-primary py-4 px-huge rounded-2">
+        展開更多
+      </button>
+    </div>
+  </div>
+</div>
+            <div class="introHeading-target" id="introHeading2">
+  <div class="mb-8">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <h3 class="fs-6 fs-lg-5 mb-2">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+            class="align-baseline d-lg-none"
+            style="width: 16px"
+            alt="flower-5"
+          /><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+            class="align-top d-none d-lg-inline-block"
+            style="width: 24px"
+            alt="flower-5"
+          />預計單元
+        </h3>
+        <p class="text-gray-8 mb-4 mb-lg-6">18 章 142 單元｜總時長 928 分鐘</p>
+      </div>
+      <a href="#" class="d-block py-2 link-primary" data-bs-toggle="collapse" data-bs-target="#collapse1,#collapse2,#collapse3,#collapse4,#collapse5,#collapse6,#collapse7,#collapse8,#collapse9,#collapse10,#collapse11,#collapse12,#collapse13,#collapse14,#collapse15,#collapse16,#collapse17,#collapse18" aria-expanded="true" aria-controls="collapseOne">全部展開</a> 
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse1"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVHgB7ZU9DoIwGIbfNsLMEbwACdykVzBcQE/B6BG8QrsxwODGpgk7sLJ1YeLPNlEGpzbSRX2SJt/Q733SNl9KoGCM7YdhuKgyUivAhyzLwn3fP3HOW/IMv20R/Ib0PC+m4zieHYRrAn0rVB2HwR0RhVsC1wLsTDemabrWQgiUZWnUZywIw3Ct8zw3bYPxFSVJgrquYYuxoOs69H0PW5w/8l/wAwLjQdMURYGqqtA0jXGPlcBmgl98xyNLOEQL7nCE+i0FnabpADenkPM8H2mWZa2SxIQQjm2QKuuqM3X2AyjNVXdv5SbgAAAAAElFTkSuQmCC"
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">課前說明</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                4 個單元<i class="bi bi-dot"></i>少於 1 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse1"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample2">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse2"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFoSURBVHgBvVUtb4NQFL2QtaYVVa1d6pu0v6GyBl23Jq0kmyT8AOTwJMyhmcPO4bYET2pBYVB87R0ymm7ZcunWt5O88Hjv3XPePfcGFBLQNO22KIonMV2KMaE/omkafzgcPvi+f1Q+yF+vQfwF2WAwWKllWT5KIAcmcEUV6WgkD0uV5GIiW4Bu+hyazWa03W5psVi071EUked5lCQJG6tsNpuGO+S6Lk2nU4rjmMbjcTtP05R2ux0XSqxFuDUIwzAkXddbUmSAtfl8zoXzFuV53toB0vM1YDQaceG8AGzB6IB6dDeHTRwu7iIUG/b0LfJFAvv9ntbrdZsRBPqgV5vC68PhcCI3DIP6ghWA56Zptr6D3HGcTzXgbGIF0KYdIZ6WZZ32YBNnFSuA9rRt+9u98+76tQAs6NMtP0H6x+5fBDKSCAi8kSSIv+WzWlXVHcnJIqvr+l4NguAoRFaKovh0HWSC6wWc4H4HCeGba7eT/3UAAAAASUVORK5CYII="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">
+                  2020 VS Code 網頁編輯器、HTML 基礎教學
+                </p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                15 個單元<i class="bi bi-dot"></i>25 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse2"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample2"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample3">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse3"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFwSURBVHgBvZWtb8JQFMVPm4EBgQI78CTg8OBA1JHgBsGS1eORI/wDc9Wdq6mYq9uS+gbbqopW9WvvvqwT27LXrH38kiav7+Oc3PNuWgUMTdPukyR5ZsMJe3qoSVEUZrvd1k3TvCqf4m9NCH8jbLVaUzVN0ycJ4kSPUlFZORrkMVEhl55sA9xV2TQajbDf7zEYDPi767owDAO+7wvPCisg0ePxiPF4jCiK+Nx8PsfpdEIVhAbD4RD9fh+2beNwOGC73cLzPD5XVvQXwogcx8Fqtfp1rayolkFJp9PhUdF90JjuII5j4bnKXdTtdr/EgyCoeqy6AXXMer3Gbrfj0Ww2G25Y22A2m0HXdd5FpRHdC0ENIEJ4B9Qp1JYkdj6fee6LxYKvVYlKWS6XhWjT5XL5EQe1KrVtIwYERVWakHgZU2MG/0X6x+4mBiEkQgbvkAT7W76oWZY9QE4VYZ7nj6plWVdmMlUUxUQzhEzrlTRJ+wMbN4+LBFoOLgAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">2020 CSS 常用語法</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                9 個單元<i class="bi bi-dot"></i>37 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse3"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample3"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample4">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            tylg-pe="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse4"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBvZWvboRAEMZnScFgUGAbPMndcyBA4xqCL0+BLB5Rh4YEga3DtQkvcBYUAhT/ukMOc8kBm7u9X0LYZHe/b2dmBwhQbNt+7/v+mw5P9FHgQeZ5TiRJ8pMkuZCr+O8zhG9oRFE8C8MwfHEQRxTMikDDsYEfJwH4ovA2gDdgxLIs0HUd2raFKIp21zMZaJoGnuct47quDxkwpSgIAui6jmXLcQPHcUBVVYjjGFg4ZGAYxmJQliWkaQos7Bpg3n3fX1IThiGwsmuwpqYoiuWN0azgWJblzf3ENM15a0GWZVvT4LouVFV1d373mt4WFU+MvYApw3pgP2zBbIA1WQ2O3CjmTsYTo/DRftitwaNw/9i9xKABjqDBH3CC/i1TYRzHD+ATRTNN06eQ5/mFmpwJIQk8h4Zq/aAmav8DgFmDKCjr71UAAAAASUVORK5CYII="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">
+                  2020 使用 CSS 變更 HTML 標籤特性
+                </p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                13 個單元<i class="bi bi-dot"></i>52 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse4"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample4"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample5">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse5"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFWSURBVHgBvZWvb4NAFMcfZK1pRVVrFzxJ6/gDcAjQuAkkCZN4PPwHc2jmEJg53JbgSS0oBCh+7d6lXciy9Ejp7ZNc7gj3vt/33l1AAIJhGM9t276R5ZGMHSxkHMdovV6/RlF0Fi7in48Q/kW1Wq1OYtd1PgdxZIddEUk5BvDjKAJfdrwN4Im1QZIksCzrz3dBEEBRFLDIYLPZgCzLcC9MgythGNLBzQDBSg6HA9R1DWmazoqZbaCqKpim+fNcliXYtg1N09yMm32L8Cw8zwPXdWn2+/0edF1nxjEryPOcimKmuIZL9oqi0BvGglnBdrulfZ+C1UznWzArwFY4jkOz9n2fztezSJKEFQ6CpmkjaxMKTg8YmbZusQGCbcK+Y1uyLKNjDrMN7oX7x+5fDCrgCBp8ASfI3/Jd7Pv+BfhUUQ3D4IhxHJ+JyUkQhAgeQ0W0PlATtb8BCeaIXIBduZMAAAAASUVORK5CYII="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">Flex 網頁排版技巧</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                13 個單元<i class="bi bi-dot"></i>26 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse5"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample5"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample6">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse6"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFxSURBVHgBvZWvb4NAFMcfZK2pqatd69u0srp1FUXXTbSyGX8FEjSIOTSgMIgpcFvAk1pQGBS/du8ylmVZcpfR2ychB5d73++9dw+QgKAoymNVVS/kdk2uKQyk6zpnPB6rjuPcpE/xt3sI/6AYjUYbua5rXYA4MsWqyCQdBcSxlkEsU9EG8MCzaDKZwPF4hP1+T5+zLAPDMOjIgiuDy+UCp9OJCqZpCsvlEjRNo8YsmBnMZjPY7XYQBAHouk7nzuczbLdbWCwWkCTJMIP5fE7HMAzpjtHQ8zywLAt4YBrgLhGsv6qqX2VxXZfLhLuLsO69aJ7n9NCxdIMNyrKko23b9EIT0zTp3Gq1YoWzDX5rxd6UB+YZYJegIJYEW7QvDxLHMSscpMPh0LEWoSC25nfQ7Hq9skL5DJD+fejFoyjiCeM3+CvCP3b/YlCAQNDgHQRB/pau3DTNE4jJomjb9ln2ff9GTDaSJDlwHwqi9YqaqP0BK+ieMA8QMOgAAAAASUVORK5CYII="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">Flex 精神時光屋</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                8 個單元<i class="bi bi-dot"></i>1 小時 15 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse6"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample6"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample7">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse7"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEuSURBVHgBvZUvboRAFIffTAoGgwLbC5DsSjQ4DBrXG7SnQPYIVaAHhwBRh2sTOMBaUHj+dR7pJs1mk5nJMv0SAgkzv4958wACnDiOn6dp+uCXJ37Y8CDbtjHTNN8YYxfyG/51RPANo2EYZzrP87uGcMTGqlC+nBj0caKgF1u3AJ5EAzzPgyRJ7t4rigKapoGHBK7r7pJ7VFUlmi4WYMhtUJqmu7TrOtF0UN4DDMajrmvo+144XlkQhuF+limPsgD3IwgCGIYB2raVmqMkuHZTlmXSc6QFlmXttcenx/ofLvB9HxzHkS6NsuBanjzPQQXhe4Dg5mLXYFvKtOZfSBRFG2hE+8fuXwQjaAQF36AJ/rcs6LIsL6BnFeO6rq+0LMsLl5wJIQyOYeRZn5iJ2T++ynPxkzxIywAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">章節說明</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                1 個單元<i class="bi bi-dot"></i>少於 1 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse7"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample7"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample8">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse8"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF5SURBVHgBvZUhb8JQFIVPm4EBgcMueBJwoMGRQDVuAks2yS9ALuEPzKFbFAYxBW5L8IAFVQEKaPfOy16yNMtuk/btSxpeSt8595170zpQeJ73eL1e39Syoa4KMhLHsV8sFl983z843+IfeQgnCAuFQtO93W6vFsRJham46jge7NFwYZeKbQM8pHmoVqthOBzqX7LdbjGfz3E8HsW94gmq1Sqm0ylarRbO57MW7XQ6mM1mKJVK0nbZoF6va6HVaoXxeIzJZKLXvEfTzAYGVp/kcrmI+8QerNdr9Pt9dLtdlMtlbcTKd7sdNpuNtF02YJX7/V43mNkb2Og0iAasnMKcmiAItOFoNMJgMNBr3v+LVE02FZvMTTScMAnRwDT358QY098an0SMaLFYoN1u60gYF+GInk4n/Z+E0+v1YukhRsET8GJMnCDTj1wMsmD9ZfcvBiEsQoNPWEJ9LQP3fr8/wc4pwiiKnt3lcnlQJk3HcXzkQ6i03qlJ7S8j3amnL8LpPQAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">網頁排版技巧 Part II</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                7 個單元<i class="bi bi-dot"></i>24 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse8"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample8"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample9">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse9"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF9SURBVHgBvZWvb8JQEMev3cBgUGAHAkcCDg8OU42bwJJO4uaQS7CIORJc6zCIKWqaLe0fUGyrKlrVX3t3WZtloq9A3z5Jc+2l/X579+61EjAURXmKouidnY7Y0YY7ybJMazabL5qmXaQf8c86hP/gNxqNsRzH8ZsAcaSNXZFZOQqIYySDWNqiDeCxyk3dbhdUVaWI2LYN+/0eXNflPsutAEU3mw0Mh0MIgoBEp9Mp5arANej1etDpdOB0OsFqtYL1eg26rlMOTe826Pf7FC3LKnKO41CsxcDzPIqz2azI5cL5mpTBXeTz+QyLxYJED4cDXMvDYDB4LbuB7UYwDKO4Nk2TJggrwjxOVBncClqtFr09iu12O8rlLQrDkPd4tX2wXC4p4gShaH79u7KbDVAQW4Ki2+22yOOoVtlo0nw+z6ACODGTyYRahn3n9f5qg1sR/rH7FwMfBIIGXyAI9rfU5SRJnkFMFX6apqp8PB4vzGQsSZIG9eAzrQ/URO1v0dGdiY+g8+0AAAAASUVORK5CYII="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">切圖技巧</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                12 個單元<i class="bi bi-dot"></i>35 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse9"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample9"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample10">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            tylg-pe="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse10"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZU/b4JAGMZfiLro4KRr426imx/AzYXZrRp3+h1MHPkADt2cYXNg6QRbm7ATV5gYYOJf77kUU8w1pcr1l1w43pd7nrvjPVCIoWnaU5qmr6w7Y21ID1KWpdnr9V5M07woX+LvbQjfEHW73bmaZZkhQRwMsSsqW45G8pipJJehbAPqiIK73Y4mkwnve55Hp9PpmptOp7Rer2k8HlMcx+S6bi3fyADiEAJhGNbED4fDNY7n0Pr9Ph2PR6GBcIv2+71wAGYOkNtsNrTdbilJEloul9yksQEGoYlWhrhlWfw+CAK+RRCvVtzIQARE0G6NYVLlHzIYDAZ0D40NqplKMwConNFoVNsOUbXdbWDbNr+iVFE5OC8wgDjOi4gO/QFUD4RRTbqu8xheumEYP45RVqtVKUpAZLFYkO/7vBS/gzjymLnjOMKS/tWgLaR/7P7FICKJwOCDJMH+lpaa5/kzyVlFVBSFrp7P5wszmSuKYlI7REzrDZrQ/gTkXafq40CMVAAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">表格與表單設計技巧</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                10 個單元<i class="bi bi-dot"></i>30 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse10"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample10"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample11">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse11"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEBSURBVHgB7ZUvb4RAEMXfbg40DtvgSe4+BwaNawi+lXh8PwCiDr112Cpkm+DJaRQGxb/ukObSnuDI3Y25u1+y2c3s5L3MTDYroPF9/6nrund93Opl4UKmaVKmab4qpfbiV/zrGsJHNIZh7GTf928M4oRFXZG6HB98bCV4sbgNsFm6jKIIjuPM57IskWUZXNdFEASHnDiOcbYBiZMgUdf1vNu2fYitYbFFSZIgTdN/saIoEIYh1rJYQdu28zoVW4J9yA+DOzDYnEqoqmp+wbT/hWJrEJ7nTWDkNobcgBEy+AYT+rf8kMMwPIOnimYcxxeZ5/lem+yEEArXodFan6RJ2j/pImSjaqIR9QAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">CSS3 技巧</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                5 個單元<i class="bi bi-dot"></i>23 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse11"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample11"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample12">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            tylg-pe="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse12"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF7SURBVHgBvZW9b4JQFMUvRF10cNK1cTfRzV03E2V2a4yrKaN/gWPdHbo5w8YAQze2NmEHV5gYYOKr796UphIwofL6S8j7yMs5vHNvQACGJElPURS9semEPX14kCzLlE6nIyuKchW+xT+aEC7gt9vtqRjH8SsHcaSPqYjsOhLwYyICX/q8DaBVtjkajWC32/2sT6cTuK5L8/F4DJvNhs7gnmmacLlc6hl0u10SKjIcDuF4PNLctm3o9XpkhlSZlEZkWRZst1vwPO9mf7Va0Xg+n2G/38PhcKD1er2GKiprkEfyG8dx6E0xlqozRVpQA13Xb9aLxYJGjKuKP3cR1iPPH5ugUYO82IPBgCK7F1Vtg6L4vRZFatVgNpuBLMvUxoZhULfl7Yx1CMPwMQNsRxRH5vM5PTnY1rUNVFUlwSAIaI1xYERl5GeKCMvlMgOOcP/Y/YuBDxxBg0/gBPtbqmKSJM/A5xZ+mqYvoqZpV2YyFQRBgWbwmdY7aqL2FyKYnxhvEEZeAAAAAElFTkSuQmCC"
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">最後，讓你的網頁變得更專業</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                10 個單元<i class="bi bi-dot"></i>少於 18 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse12"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample12"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample13">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse13"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF4SURBVHgBvZUtbMJAGIbfNgODQYFd8CTg8OBAVOMWgiWtJFj8PIg5dOswiClwW4InWFAVoPq3ey8rWbo2S6G3J7nc9XL93u/vWg0CwzCePc97E8uWGFU8SBRFdrlctmzbPmrfxj+KMJzALZVKbd33/VcFxkmVWdFFOAbU0dKhlqpqATylbTabTQyHw9vzdDq9rXu9HrrdLur1Oi6XC3a7HVarFXIJ8GWKJKFx0zRxvV5xOBzkudiRLJHUFG23W4xGo1/7nU5HzovFQkYVR0bhXBHQQ44k8/k87ThOpxNyCfxFXKNGoyEdWS6XmWfv6qJKpSJFOGdF+5AAO2cwGGAymUiR2WxWjMB4PIZlWdIoYSfRe6Yqi1w1YFuyk1jUzWaDWq0mx/l8LkaAvU5vWeCfF9FxnPsEkpeHKWHvs8D0nOz3ezmy0Pr9fgSFKP/Y/YuAC4VQ4BOKEH9LRw+C4AVqonDDMDT19Xp9FCJtTdNsFIMrbL3TJm1/ARSbniokqv9KAAAAAElFTkSuQmCC"
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">開發多頁式網站實戰講解</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                6 個單元<i class="bi bi-dot"></i>8 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse13"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample13"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample14">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            tylg-pe="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse14"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBvZUvb4NAFMAfrK2uau1SUdekdXhwGDRu32BI3BxyHwAxhwaHADEFbkv4ArVgwKD4t3uXQRYCjDBuv6TphePe7927B3BAUBTlsSiKNzK8kt8e/kjTNPZut9Ns275z38E/1gjcI9tutze+LMtXBsGRPVaFJ9tRgB1XHtiyZy2AzdBFTdPgcDjQsed54Ps+jN2HBEEAYRjOF1wul04QRdHgQlVVQRRFOo7jeFQwWCJd18FxHBjjeDxSQZ7n8BuDAsxoarFhGHTeNE1YJJgCM8fyWZZFE1lVgGeDAjyXqRIuEmDd267BzkLZ6XTq5tpxnw3MBMvSdlYrasFuwjlsjsWCJElo3X+CWQuCQEuGuxpitgAPtC+QJKkTjD2MD+fz+QUmssbF+D9GmqaT93CyLDfAEOYvu38RZMAQFHwCI8jX0uGrqnoCNrvI6rp+5l3XvRPJjeM4G9YhI7HeMSbG/gLg+qFxYaecSAAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">接下來，你還可以學什麼？</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                3 個單元<i class="bi bi-dot"></i>少於 1 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse14"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample14"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample15">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse15"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFwSURBVHgBvZUtb4NAHMb/kLampqq1S32T1vUD1FUUXTdRP2STyvp9gIq5anAIzBS4LQFNakFhULztnstIxnYlpeX2Sy457uB5+L8cKMTQNO0pTdM3Np2zMaIHKcvSGAwGumEYF+Vb/KML4V/E/X5/oWZZ9ipBHIyQFZWFo5E85irJZSTbgHqixd1uR9PplM89z6Pz+cznm82Glsvln/uDIKDT6UQ3G0B8NpvxeRRFwvVbERocj0darVY8EhH7/Z5HdrdBkiR8XGM4HPIXAGEYNpr16A4Oh0PtGjWq6tSJAYoKQUSp6zptt1sehSiSVgamaZJt29ygSqHjOLy7xuOx8JlW5wC5n0wmtbWmWoFWEaBFkQ6cBaToZ7F933/cACmCeDUqYIZuEqGs1+tStIFDBRHk23Xd2h7WsY/0YL+pTa8adIX0j92/GMQkERh8kiTY39JU8zx/JjlRxEVRvKiWZV2YyUJRFIO6IWZa79CE9hezAKV3hLOA4gAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">
+                  網頁編輯器、HTML 基礎教學（舊章節）
+                </p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                4 個單元<i class="bi bi-dot"></i>1 小時 12 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse15"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample15"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample16">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse16"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGeSURBVHgBvZU9k8FQGIVPMmgoVLRLb4ZOT6eQv7AFpUl6/yFGSbEVddJpFFvR7c7o0VKloPKRzbmzMUTYtXL3mbkjuZFz7vvek0SBh6ZpL7vd7s07LHojjSdxXddKJBKGZVlL5Vv8IwrhAE48Hi+p+/3elCBO0uyK6pWjQR5FFXJJyzZALGyyXq+jXC6L4/l8jn6/f7qWz+fRaDSQzWax2WywWCzQ6/Ww3W5/b0CRQqFwNU/RdruNZDKJ6XQq/lOpVITR+SJ+NOCKZrMZdF2/mGdVmUwGpmliPB6LuW63G7qYuwYsd7VaXc37baM4q6FZq9XCPWJ4ALZmvV7DMAzRGsLzwWBwqijIQylKpVJi1blcDp1OB7Zti/NmsynMn66Am0lBijNdPkwd94Eb/1QFjCQ5j+SteP7JYDKZiF8+B36Uq9XqhXmQh1rEFnAwTX6iyHA4DE0dUWq1mht2gTFkUnhjMCEUZwWEzwvHLW4aRIX0l92/GDiQCA0+IQnva2mrh8PhFXKqcI7Ho66ORqOlZ1JSFMVCNDie1js1qf0FRXC1wAvwhVsAAAAASUVORK5CYII="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">CSS 常用語法（舊章節）</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                6 個單元<i class="bi bi-dot"></i>16 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse16"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample16"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample17">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            tylg-pe="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse17"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBvZW9boMwFIUvKMmcKVmr7EjJxg4bSDCzVbxA+xSM8AbdmGFjgKETbK3EDllhYmHir7ZVUBsFQhPcT7Js2eYe33MtzABCVdWnqqre0PCI2hYepOs6Z7PZvDqOc2a+g38sEfiCYr1en9i6rk0KwTFb7AqL0lGBHkcW6LKlLQCrsQXDMIax67oQRREoigI8z1/db1kWZFk2X4DjuGHs+z7pD4fDr/k5jFqk6zo59U9M0wRZloeG92DiOL56+kkB/EFZljCFpmmk7zP8k8AcsF15nkMQBMsLiKIIu92OXIAp7hbo7bms0yIC/emxNWPFfUhAEATS37LnLoH9fk+Ki69mkiQ396+mFsMwJBakaTrMYWts2yYCc2AkSeqAItR/dv8iUABFsMAnUAK9li7bNM0z0MmiaNv2hfU874xETgzDOLAMBYr1jmPi2F9VTYmODaqhhQAAAABJRU5ErkJggg=="
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">
+                  2020 使用 CSS 變更 HTML 標籤特性
+                </p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                8 個單元<i class="bi bi-dot"></i>12 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse17"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample17"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample18">
+      <div class="accordion-item mb-4 border-0 rounded-1 shadow-sm">
+        <h4 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse18"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <div class="d-flex justify-content-lg-between w-100">
+              <div class="d-flex">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGoSURBVHgBvZU9jAFRFIXvzC6NRkW7FDoJnZ6OxNS6jehnStFsp5yexHYqxUynoNhOt5vQaNDSmILKz+w7L/tkMZOQ8ZxEXPfFd979YRRi0jTtbbfbfbIww15RCijXda1wOGxYlrVQ/uDfjwBfyAmFQll1v9+bEuBQFF1RWTkayVNGJbmKyjagV69kuVymXC7H49lsRu12+3RWKBQon89TPB6nzWZD8/mcWq0Wbbfb2w2SySSl0+mrPOC6rnMYjGECs1gsRvV6nW42wI0AqNVqZ3nAINM0aTQaUSQSoU6nwy8Ds+VyecXynAFu6FWyyP1/FzHadXMFfup2u7x9hmHQYDDgMdqD/F0z8JOAAFqpVM5yfrprTRuNxmmgpVKJqtUqN4AZqglsAMhqtaLxeMw/Y6giTiQSwQ0ARwVihbE5IsaZl+6agW3bfHWbzSZvDdZU5EUll3pJpVIffsD1es2/iF8rNJ1OaTgcns4nkwmH93o9PwQpxWLRJYmS/mf3FAOHJAoGPyRJ7Glpq4fD4Z3kVOEcj0dd7ff7C2aSVRTFosfIYawvMMH+BYY6y7IUq4l5AAAAAElFTkSuQmCC"
+                  class="me-2 object-fit-cover"
+                  style="width: 24px; height: 24px"
+                  alt="10"
+                />
+                <p class="ps-2 pe-4 pe-lg-0">網頁排版技巧 Part I（舊章節）</p>
+              </div>
+              <p class="fs-sm text-gray-8 pe-4 d-none d-lg-block">
+                7 個單元<i class="bi bi-dot"></i>7 分鐘
+              </p>
+            </div>
+          </button>
+        </h4>
+        <div
+          id="collapse18"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample18"
+        >
+          <div
+            class="accordion-body px-0 rounded-bottom-start-1 rounded-bottom-end-1"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <div class="d-flex align-items-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2 me-4 fs-xs"
+                      >
+                        試看單元
+                      </button>
+                      <p class="fs-sm text-gray-8">00:10</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>課程最終任務說明
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-camera-video pe-2"></i>課前說明</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p>
+                      <i class="bi bi-camera-video pe-2"></i>Hahow
+                      學生如何在六角平台檢視問題
+                    </p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-100 py-4 px-6 btn btn-outline-secondary border-0 rounded-0"
+                  type="button"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p><i class="bi bi-book pe-2"></i>課業作業</p>
+                    <p class="fs-sm text-gray-8">00:10</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="introHeading-target" id="introHeading3">
+  <div class="mb-8">
+    <h3 class="fs-6 fs-lg-5 mb-6">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+        class="align-baseline d-lg-none"
+        style="width: 16px"
+        alt="flower-5"
+      /><img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+        class="align-top d-none d-lg-inline-block"
+        style="width: 24px"
+        alt="flower-5"
+      />關於講師
+    </h3>
+    <div class="p-4 p-lg-7 rounded-1 shadow">
+      <div
+        class="d-flex flex-column flex-lg-row pb-m mb-m border-bottom border-1 border-gray-4"
+      >
+        <div class="d-flex">
+          <img
+            src="data:image/png;base64,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"
+            class="d-none d-lg-block img-fluid py-2 me-4"
+            alt="hexschool"
+          />
+          <img
+            src="data:image/png;base64,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"
+            class="d-block d-lg-none img-fluid my-2 me-4"
+            style="width: 60px;height: 60px;"
+            alt="hexschool"
+          />
+          <div class="d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="fs-base fs-lg-6 mb-2">六角學院</h3>
+              <p class="fs-sm fs-lg-base text-gray-8">
+                打破線上課程售後不理，我們在線上等你！帶你學到會的線上課程。
+              </p>
+            </div>
+            <div class="d-none d-lg-flex">
+              <p
+                class="fs-base text-gray-8 border-1 border-end border-gray-4 pe-4 me-4"
+              >
+                2 堂課程
+              </p>
+              <p
+                class="fs-base text-gray-8 border-1 border-end border-gray-4 pe-4 me-4"
+              >
+                1,567 個學生
+              </p>
+              <p class="fs-base text-gray-8">1,034 則評論</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex d-lg-none">
+          <p
+            class="fs-sm text-gray-8 border-1 border-end border-gray-4 pe-4 me-4"
+          >
+            2 堂課程
+          </p>
+          <p
+            class="fs-sm text-gray-8 border-1 border-end border-gray-4 pe-4 me-4"
+          >
+            1,567 個學生
+          </p>
+          <p class="fs-sm text-gray-8">1,034 則評論</p>
+        </div>
+      </div>
+      <div class="mb-m">
+        <p class="fs-sm fs-lg-base text-gray-8 mb-4">
+          六角學院是一所線上程式開發學習單位，目前已累積 20,000
+          名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+        </p>
+        <p class="fs-sm fs-lg-base text-gray-8">
+          我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運
+          Know how。
+        </p>
+      </div>
+      <div class="text-end">
+        <a href="#" class="link-primary"
+          >了解更多講師履歷<i class="bi bi-chevron-right ms-1"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+  </div>            <div class="introHeading-target" id="introHeading4">
+  <div class="mb-8">
+    <h3 class="fs-6 fs-lg-5 mb-6">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+        class="align-baseline d-lg-none"
+        style="width: 16px"
+        alt="flower-5"
+      /><img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+        class="align-top d-none d-lg-inline-block"
+        style="width: 24px"
+        alt="flower-5"
+      />購課前問答
+    </h3>
+    <div class="p-4 p-lg-7 rounded-4 shadow mb-4 d-lg-flex">
+      <div class="me-0 me-lg-6 mb-6 mb-lg-0 d-flex d-lg-block">
+        <img
+          src="/week8-LearningWebsite/assets/avatar-3-af2de766.png"
+          class="object-fit-cover d-block d-lg-none me-2 me-lg-0"
+          style="width: 32px; height: 32px"
+          alt="avatar-3"
+        />
+        <img
+          src="/week8-LearningWebsite/assets/avatar-3-af2de766.png"
+          class="object-fit-cover d-none d-lg-block"
+          alt="avatar-3"
+        />
+        <div class="d-block d-lg-none">
+          <p>Jessica</p>
+        </div>
+      </div>
+      <div class="w-100">
+        <div class="mb-4">
+          <p class="mb-4 d-none d-lg-block">Jessica</p>
+          <div class="mb-4">
+            <textarea
+              name="formGroupExampleInput"
+              type="text"
+              class="form-control p-2 p-lg-4 fs-sm fs-lg-base mb-4 mb-lg-0"
+              id="formGroupExampleInput"
+              placeholder="上課前有什麼疑問嗎？ 在這裡盡情詢問講師！"
+              style="height: 100px; resize: none"
+            ></textarea>
+          </div>
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+            <div class="d-flex align-items-center mb-2 mb-lg-0">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+                class="me-2"
+                style="width: 16px;height: 16px;"
+                alt="flower-5"
+              />
+              <p class="text-gray-6 fs-sm">
+                提問之前也別忘了看看其他同學有沒有跟你有相同的問題哦
+              </p>
+            </div>
+            <div class="w-100 d-block d-lg-none">
+              <a
+                href="#"
+                class="btn btn-gray-4 text-gray-6 rounded-2 px-4 py-3 d-block w-100"
+                >送出</a
+              >
+            </div>
+            <div class="d-none d-lg-block">
+              <a
+                href="#"
+                class="btn btn-gray-4 text-gray-6 rounded-2 px-4 py-3"
+                >送出</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-7 rounded-4 shadow mb-4">
+      <div class="d-lg-flex">
+        <div class="me-0 me-lg-6 mb-6 mb-lg-0 d-flex d-lg-block">
+          <img
+            src="/week8-LearningWebsite/assets/avatar-4-fac02bdb.png"
+            class="object-fit-cover d-block d-lg-none me-2 me-lg-0"
+            style="width: 44px; height: 44px"
+            alt="avatar-4"
+          />
+          <img
+            src="/week8-LearningWebsite/assets/avatar-4-fac02bdb.png"
+            class="object-fit-cover d-none d-lg-block"
+            alt="avatar-4"
+          />
+          <div class="d-block d-lg-none">
+            <p>Brian</p>
+            <p class="text-gray-6">2024-01-30</p>
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="mb-4">
+            <p class="mb-1 d-none d-lg-block">Brian</p>
+            <p class="mb-4 text-gray-6 d-none d-lg-block">2024-01-30</p>
+            <p class="text-gray-8">
+              老師您好，想問您:<br />1.
+              課程是用MAC作業系統，只使用Windows作業系統的同學會有學習上的問題嗎~<br />2.
+              此課程在Udemy、好好學校、六角學院購買會有什麼不一樣嗎~
+            </p>
+          </div>
+          <div class="p-4 bg-gray-1 shadow-sm rounded-4">
+            <p class="mb-1">
+              六角學院<span
+                class="fs-xs text-primary rounded-1 border border-primary py-1 px-2 ms-2"
+                >授課老師</span
+              >
+            </p>
+            <p class="mb-4 text-gray-6">2024-01-31</p>
+            <p class="text-gray-6">
+              嗨嗨 Brian<br />我是六角學院助教 Bingbingboom<br /><br />關於同學的問題：<br />1.
+              使用 Windows 系統是可以的，沒有問題哩<br />2. 課程內容都是相同的哦
+              ～<br /><br />若有問題歡迎再次發問 :D
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-7 rounded-4 shadow mb-4">
+      <div class="d-lg-flex">
+        <div class="me-0 me-lg-6 mb-6 mb-lg-0 d-flex d-lg-block">
+          <img
+            src="/week8-LearningWebsite/assets/avatar-5-d85eb65c.png"
+            class="rounded-circle object-fit-cover d-none d-lg-block"
+            style="width: 60px; height: 60px"
+            alt="avatar-5"
+          />
+          <img
+            src="/week8-LearningWebsite/assets/avatar-5-d85eb65c.png"
+            class="rounded-circle object-fit-cover d-block d-lg-none me-2 me-lg-0"
+            style="width: 44px; height: 44px"
+            alt="avatar-5"
+          />
+          <div class="mb-0 mb-lg-4 d-block d-lg-none">
+            <p class="mb-0 mb-lg-1">Sandy</p>
+            <p class="text-gray-6">2023-12-29</p>
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="mb-4">
+            <p class="mb-1 d-none d-lg-block">Sandy</p>
+            <p class="mb-4 text-gray-6 d-none d-lg-block">2023-12-29</p>
+            <p class="text-gray-8">
+              您好，這個課程跟六角網站上的課程是一樣的嗎?
+            </p>
+          </div>
+          <div class="p-4 bg-gray-1 shadow-sm rounded-4">
+            <p class="mb-1">
+              六角學院<span
+                class="fs-xs text-primary rounded-1 border border-primary py-1 px-2 ms-2"
+                >授課老師</span
+              >
+            </p>
+            <p class="mb-4 text-gray-6">2024-01-31</p>
+            <p class="text-gray-6">
+              嗨嗨 Sandy<br />我是六角學院助教 Bingbingboom<br /><br />對的，這部分因為字幕問題還沒有更新<br />後續等字幕用好了就會更新哩！<br /><br />若有問題歡迎再次發問
+              :D
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-7 rounded-4 shadow mb-4">
+      <div class="d-lg-flex">
+        <div class="me-0 me-lg-6 mb-6 mb-lg-0 d-flex d-lg-block">
+          <img
+            src="/week8-LearningWebsite/assets/avatar-6-242609fb.png"
+            class="rounded-circle object-fit-cover d-none d-lg-block"
+            style="width: 60px; height: 60px"
+            alt="avatar-6"
+          />
+          <img
+            src="/week8-LearningWebsite/assets/avatar-6-242609fb.png"
+            class="rounded-circle object-fit-cover d-block d-lg-none me-2 me-lg-0"
+            style="width: 44px; height: 44px"
+            alt="avatar-6"
+          />
+          <div class="mb-0 mb-lg-4 d-block d-lg-none">
+            <p class="mb-0 mb-lg-1">Tim</p>
+            <p class="text-gray-6">2024-01-30</p>
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="mb-4">
+            <p class="mb-1 d-none d-lg-block">Tim</p>
+            <p class="mb-4 text-gray-6 d-none d-lg-block">2024-01-30</p>
+            <p class="text-gray-8">
+              助教你好，我本身是一位插畫家，想轉往數位的方向發展。目前想做兩種網站，一個是類似這種的簡易landing
+              page，用來介紹我的插畫品牌以及作品或故事等等：https://glory.taipei/#articleSection1<br />另一個是數位繪本的形式，像是這個網站，可以利用滑鼠的點擊、拖曳、hold等功能跟網頁做互動：<br />https://2019.makemepulse.com/<br />請問這堂課學完試可以製作這兩種網頁的嗎？
+            </p>
+          </div>
+          <div class="p-4 bg-gray-1 shadow-sm rounded-4">
+            <p class="mb-1">
+              六角學院<span
+                class="fs-xs text-primary rounded-1 border border-primary py-1 px-2 ms-2"
+                >授課老師</span
+              >
+            </p>
+            <p class="mb-4 text-gray-6">2024-01-31</p>
+            <p class="text-gray-6">
+              嗨嗨 Tim<br />我是六角學院助教 Bingbingboom<br /><br />若是第一種單純呈現圖片、文字、靜態的樣式排版學習完
+              HTML/CSS 課程是可以成功製作出來的<br />若是想要製作互動功能、滾動視差、動畫效果會建議再深入學習
+              jQuery、Javascript
+              相關的課程，瞭解如何使用程式讓使用者與網頁中的元素做互動哦<br /><br />若有問題歡迎再次發問
+              :D
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="col-4 d-none d-lg-block">
+            <div class="card bg-white shadow-sm sticky-top sticky-top-custom">
+              <h5 class="card-header bg-white border-1 border-bottom border-gray-4 ms-4 ps-0 pt-6 pb-4 fs-base">購買本堂課</h5>
+              <div class="card-body py-6 px-4">
+                <a class="btn btn-alert-L text-alert fs-sm mb-6" href="#" role="button">限定優惠 75 折</a>
+                <p class="card-text fs-3 mb-2">NT$ 3,375 <span class="text-gray-6 fs-base"><del>NT$ 4,500</del></span></p>
+                <p class="text-gray-8 mb-6">16,390 人已註冊</p>
+                <div>
+                  <a href="#" class="btn btn-primary rounded-1 w-75 py-4 me-4">立即購買</a>
+                  <a href="#" class="btn btn-outline-primary rounded-1 p-4"><i class="bi bi-cart3 fs-5 d-block" style="height: 24px;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-block d-lg-none">
+            <div class="card bg-white fixed-bottom border-0 rounded-0">
+              <div class="card-body d-flex justify-content-between align-items-center border-top border-gray-4 py-3 px-4">
+                <div>
+                  <p class="card-text fs-6 mb-1">NT$ 3,375</p>
+                  <p class="text-gray-8 fs-xs">16,390 人已註冊</p>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-outline-primary rounded-1 p-4 me-2"><i class="bi bi-cart3 fs-5 d-block" style="height: 24px;"></i></a>
+                  <a href="#" class="btn btn-primary rounded-1 px-7 py-4">立即購買</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer text-white rounded-top-6">
+    <div class="container py-8 px-5 py-md-huge px-md-3">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col col-md-3 mb-m mb-md-0">
+                <img src="data:image/png;base64,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" alt="白色Logo" style="height: 32px;">
+            </div>
+            <div class="col col-md-9 d-flex align-items-end justify-content-md-end mb-m mb-md-0">
+                <ul class="list-unstyled mb-0 fs-sm d-flex">
+                    <li class="mb-6 mb-md-0 me-7"><a href="#">常見問題</a></li>
+                    <li class="mb-6 mb-md-0 me-7"><a href="#">關於我們</a></li>
+                    <li class="mb-6 mb-md-0 me-7"><a href="#">隱私權政策</a></li>
+                    <li class="mb-0"><a href="#">使用者條款</a></li>
+                </ul>
+            </div>
+            <div class="col order-4 order-md-3 d-flex align-items-end">
+                <h6 class="fs-xs fs-md-sm fw-normal mb-0">copyright © 2024 LEARNING 課程網站 All Rights Reserved.</h6>
+            </div>
+            <div class="col order-3 mb-7 order-md-4 mb-md-0 mt-4">
+                <ul class="list-unstyled mb-0 fs-base lh-1 d-flex justify-content-md-end">
+                    <li class="p-3 border border-white rounded-circle"><a href="#"><i class="bi bi-line"></i></a></li>
+                    <li class="p-3 border border-white rounded-circle mx-4"><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    <li class="p-3 border border-white rounded-circle"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>  </body>
+</html>
