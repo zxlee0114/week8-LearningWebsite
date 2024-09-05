@@ -2,7 +2,6 @@
 // section-1
 .banner-bg {
   position: relative;
-  z-index: -3;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $gray-1;
@@ -22,37 +21,39 @@
 
   //   flower 偽元素
   &::before {
+    position: absolute;
     content: "";
-    background-image: url(/assets/images/deco/flower-2.png);
-    background-repeat: no-repeat;
     width: 560px;
     height: 560px;
-    position: absolute;
-    left: 0;
+    background-image: url(/assets/images/deco/flower-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: -48px;
     top: -95px;
-    z-index: -2;
+    z-index: 1;
     @media screen and (max-width: 1200px) {
       display: none;
     }
   }
 
   &::after {
+    position: absolute;
     content: "";
-    background-image: url(/assets/images/deco/flower-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 560px;
     height: 560px;
-    position: absolute;
+    background-image: url(/assets/images/deco/flower-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     right: 24px;
-    top: 40px;
-    z-index: -2;
+    top: 100px;
+    z-index: 1;
 
     @media screen and (max-width: 992px) {
       width: 240px;
       height: 240px;
       top: 0;
-      right: -40px;
+      right: -65px;
     }
   }
 }
@@ -61,27 +62,32 @@
 .banner-deco {
   position: relative;
   &::before {
+    position: absolute;
     content: "";
-    background-image: url(/assets/images/deco/polygon-2.png);
-    background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-    position: absolute;
-    left: 198px;
-    top: 40px;
-    z-index: -1;
+    background-image: url(/assets/images/deco/polygon-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 150px;
+    top: 0px;
+    z-index: 2;
+    @media screen and (max-width: 1200px) {
+      left: 16px;
+    }
   }
 
   &::after {
+    position: absolute;
     content: "";
-    background-image: url(/assets/images/deco/polygon-2.png);
-    background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-    position: absolute;
+    background-image: url(/assets/images/deco/polygon-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     right: 360px;
-    top: 20px;
-    z-index: -1;
+    top: -40px;
+    z-index: 2;
     @media screen and (max-width: 1200px) {
       display: none;
     }
@@ -267,11 +273,6 @@
   }
 }
 
-.swiper-pagination-bullet-active {
-  width: 24px;
-  border-radius: 20px;
-}
-
 // 程式頂尖講師
 .teacher-card-body {
   padding: 16px;
@@ -373,17 +374,6 @@
 .swiper-pagination {
   width: 232px;
   position: relative;
-
-  &::after {
-    content: "";
-    width: 80px;
-    height: 1px;
-    background-color: $gray-400;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
   .swiper-prev:hover {
     background: $gray-400;
