@@ -45,9 +45,38 @@ const hotCategorySwiper = new Swiper('.hotCategorySwiper', {
   }
 });
 const hotSwiper = new Swiper('.hotSwiper', {
-  
+  slidesPerView: 1.1,
+  spaceBetween: 24,
+  pagination: {
+    el: ".hotSwiper-pagination",
+  },
+  breakpoints: {
+    768:{
+      slidesPerView: 2,
+      grid: {
+        fill: 'row',
+        rows: 2,
+      },
+    }
+  }
 });
 
+
+const teachersSwiper = new Swiper('.teachersSwiper', {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  pagination: {
+    el: ".teachersSwiper-pagination",
+  },
+  breakpoints: {
+    768:{
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  }
+});
 
 // 程式課程 Swiper
 const courseListSwiper = new Swiper(".course-list-swiper", {
