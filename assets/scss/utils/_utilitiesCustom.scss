@@ -5,7 +5,7 @@ $utilities: () !default;
 $utilities: map-merge(
   (
     "font-size": (
-      rfs: true,
+      rfs: false,
       responsive: true,
       property: font-size,
       class: fs,
@@ -17,7 +17,9 @@ $utilities: map-merge(
       class: fw,
       values: (
         normal: $font-weight-normal, // 400
+        medium: $font-weight-medium, // 500
         bold: $font-weight-semibold, // 600
+        bolder: $font-weight-bold,   // 700
       )
     ),
     "letter-spacing": (
@@ -213,6 +215,14 @@ $utilities: map-merge(
     "border-top": (
       responsive: true,
       property: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-start": (
+      responsive: true,
+      property: border-start,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0,

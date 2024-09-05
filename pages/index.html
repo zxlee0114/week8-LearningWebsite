@@ -62,21 +62,23 @@
     </div>
 
     <!-- Hot -->
-    <div class="hot-bg">
+    <section class="hot hot-bg">
       <div class="container py-md-XHuge py-xl">
         <div class="row">
           <div class="col-12 col-xl-4">
-            <h2 class="fs-1">火熱募資課程</h2>
-            <p>現在購買最優惠✨</p>
-            <ul class="list-unstyled d-flex flex-nowrap text-nowrap overflow-scroll flex-sm-wrap" style="gap: 12px;">
-              <li><a href="#" class="btn btn-primary px-4 py-3 rounded-2">全部</a></li>
-              <li><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">🍽️ 烹飪料理</a></li>
-              <li><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">📊 數據分析</a></li>
-              <li><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">🎼 音樂製作</a></li>
-              <li><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">📝 創意寫作</a></li>
-              <li><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">💬 語言學習</a></li>
-              <li><a href="#" class="btn border-1 border-gray-4 px-7 py-4 rounded-2">🖌️ 藝術創作</a></li>
-            </ul>
+            <h2 class="fs-1 mb-2 fw-bolder fw-md-bold">火熱募資課程</h2>
+            <p class="fs-6 fs-md-base fw-meddle fw-md-normal mb-6 mb-xl-m">現在購買最優惠✨</p>
+            <div class="swiper hotCategorySwiper mb-6 mb-xl-m">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide w-auto"><a href="#" class="btn btn-primary px-4 py-3 rounded-2">全部</a></div>
+                <div class="swiper-slide w-auto"><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">🍽️ 烹飪料理</a></div>
+                <div class="swiper-slide w-auto"><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">📊 數據分析</a></div>
+                <div class="swiper-slide w-auto"><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">🎼 音樂製作</a></div>
+                <div class="swiper-slide w-auto"><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">📝 創意寫作</a></div>
+                <div class="swiper-slide w-auto"><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">💬 語言學習</a></div>
+                <div class="swiper-slide w-auto"><a href="#" class="btn border-1 border-gray-4 px-4 py-3 rounded-2">🖌️ 藝術創作</a></div>
+              </div>
+            </div>
             <a href="#" class="btn btn-primary px-4 py-3 rounded-2 d-none d-xl-inline-block">更多募資課程</a>
           </div>
           <div class="col-12 col-xl-8">
@@ -86,7 +88,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <%- include('./layout/category'); -%>
 
     <%- include('./layout/footer'); -%>
 

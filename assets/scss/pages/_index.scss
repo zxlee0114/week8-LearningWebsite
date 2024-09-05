@@ -1,0 +1,6 @@
+.hot h2:first-child {
+    font-weight: 700;
+    @media (min-width:768px) {
+        font-weight: 600;
+    }
+}

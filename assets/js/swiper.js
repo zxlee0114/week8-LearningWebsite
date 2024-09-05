@@ -26,8 +26,24 @@ const heroSwiper = new Swiper('.heroSwiper', {
     delay: 2000,
   },
 });
-// 參考文章:https://blog.csdn.net/qq_42855675/article/details/112850049
+// 參考文章：https://blog.csdn.net/qq_42855675/article/details/112850049
 
+const hotCategorySwiper = new Swiper('.hotCategorySwiper', {
+  slidesPerView: 1.2,
+  spaceBetween: 8,
+  breakpoints: {
+    768:{
+      spaceBetween: 12,
+    },
+    1200:{
+      slidesPerView: 3,
+      grid: {
+        fill: 'row',
+        rows: 3,
+      },
+    }
+  }
+});
 const hotSwiper = new Swiper('.hotSwiper', {
   
 });
@@ -162,11 +178,27 @@ const hotTopicSwiper = new Swiper(".hotTopicSwiper", {
 });
 
 // 一探究竟
-const categorySwiper = new Swiper(".category-swiper", {
-  slidesPerView: 1, // 一次呈現幾張
-  slidesPerGroup: 1, // 一個群組內有幾張投影片
-  spaceBetween: 24, // 每個內容之間的間隔為 24px
-  //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
+const categorySwiper = new Swiper(".categorySwiper", {
+  slidesPerView: 1.2,
+  grid: {
+    fill: 'row',
+    rows: 2,
+  },
+  spaceBetween: 20,
 
-  loop: false, // 循環播放
+  breakpoints: {
+    768: {
+      slidesPerView: 3.2,
+      grid: {
+        rows: 2,
+      },
+    },
+    1200: {
+      slidesPerView: 2,
+      grid: {
+        rows: 4,
+      }
+    }
+  }
+  //swipwer行列式，參考文章：https://stackoverflow.com/questions/72873652/swiper-js-rows-2-is-stacking-everything-resulting-in-infinite-rows
 });
