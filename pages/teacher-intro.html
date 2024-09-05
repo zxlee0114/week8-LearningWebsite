@@ -5,88 +5,240 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>teacher-intro</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <main>
-      <section class="banner">
-        <!-- <picture>
-          <source srcset="../assets/images/hero-sm-5.png" media="(max-width: 375px)">
-          <img src="../assets/images/hero-5.png" alt="hero-img">
-        </picture> -->
-        <div class="container" style="padding-top: 320px;">
+      <section class="banner mb-huge">
+        <div class="container pt-sm-xxxl pt-xxl" >
           <div class="row">
-            <div class="col-md-3 d-flex justify-content-center">
-              <div class="d-inline-block bg-white rounded-circle p-5">
-                <img src="../assets/images/icons/ic_ hexschool_big.png" alt="六角學院 logo" style="width: 200px;">
+            <!-- 教師圖片 -->
+              <div class="col-md-3 d-flex justify-content-center align-self-start">
+                <div class="d-inline-block bg-white rounded-circle p-sm-5 p-s">
+                  <img class="hex-img" src="../assets/images/icons/ic_ hexschool_big.png" alt="六角學院 logo">
+                </div>
+              </div>
+              <div class="banner-content col-md-9 ms-auto pt-md-xxl pt-6">
+                <!-- 教師名稱 -->
+                <h2 class="banner-title fs-sm-1 fs-3 fw-bold mb-sm-6 mb-4 text-md-start text-center">六角學院</h2>
+                <!-- 教師成就 -->
+                <ul class="banner-feature list-unstyled d-flex mb-sm-6 mb-4 justify-content-md-start justify-content-center">
+                  <li class="banner-feature-item pe-sm-6 pe-3 py-1 py-sm-0 text-gray-8 fs-base-sm fs-sm"><span class="text-primary headings-line-height fs-sm-6 fw-bold me-1">4</span>堂課</li>
+                  <li class="banner-feature-item banner-feature-item-border px-sm-6 px-3 py-1 py-sm-0 text-gray-8 fs-base-sm fs-sm"><span class="text-primary headings-line-height fs-sm-6 fw-bold me-1">8463</span>收藏數</li>
+                  <li class="banner-feature-item ps-sm-6 ps-3 py-1 py-sm-0 text-gray-8 fs-base-sm fs-sm"><span class="text-primary headings-line-height fs-sm-6 fw-bold me-1">20,218</span>個學生</li>
+                </ul>
+                <!-- 教師描述 -->
+                <p class="banner-text fs-sm-base fs-xs text-gray-8 mb-sm-6 mb-4">六角學院 是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。<br>
+                 我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。</p>
+                 <!-- 社群媒體 -->
+                <ul class="banner-icon list-unstyled d-flex me-md-auto mx-auto justify-content-md-start justify-content-center">
+                  <li><a href="#" class="banner-social-icon-bg position-relative d-block">
+                    <i class="bi bi-line position-absolute top-50 start-50 translate-middle"></i>
+                  </a></li>
+                  <li><a href="#" class="banner-social-icon-bg position-relative d-block mx-6">
+                    <i class="bi bi-youtube position-absolute top-50 start-50 translate-middle"></i>
+                  </a></li>
+                  <li><a href="#" class="banner-social-icon-bg position-relative d-block">
+                    <i class="bi bi-facebook position-absolute top-50 start-50 translate-middle"></i>
+                  </a></li>
+                </ul>
               </div>
             </div>
-            <div class="banner-content col-md-9 ms-auto pt-sm-xl pt-lg">
-              <h2 class="banner-title fs-sm-1 fs-3 bold mb-sm-6 mb-4 text-md-start text-center">六角學院</h2>
-              <ul class="banner-feature list-unstyled d-flex mb-sm-6 mb-4 justify-content-md-start justify-content-center">
-                <li class="banner-feature-item pe-sm-6 pe-3 py-1 py-sm-0 text-gray-8 fs-base-sm fs-sm"><span class="text-primary headings-line-height fs-sm-6 bold me-1">4</span>堂課</li>
-                <li class="banner-feature-item banner-feature-item-border px-sm-6 px-3 py-1 py-sm-0 text-gray-8 fs-base-sm fs-sm"><span class="text-primary headings-line-height fs-sm-6 bold me-1">8463</span>收藏數</li>
-                <li class="banner-feature-item ps-sm-6 ps-3 py-1 py-sm-0 text-gray-8 fs-base-sm fs-sm"><span class="text-primary headings-line-height fs-sm-6 bold me-1">20,218</span>個學生</li>
-              </ul>
-              <p class="banner-text text-gray-8 mb-sm-6 mb-4">六角學院 是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。<br>
-               我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。</p>
-              <ul class="banner-icon list-unstyled d-flex me-md-auto mx-auto justify-content-md-start justify-content-center">
-                <li><a href="#" class="banner-social-icon-bg position-relative d-block">
-                  <i class="bi bi-line position-absolute top-50 start-50 translate-middle"></i>
-                </a></li>
-                <li><a href="#" class="banner-social-icon-bg position-relative d-block mx-6">
-                  <i class="bi bi-youtube position-absolute top-50 start-50 translate-middle"></i>
-                </a></li>
-                <li><a href="#" class="banner-social-icon-bg position-relative d-block">
-                  <i class="bi bi-facebook position-absolute top-50 start-50 translate-middle"></i>
-                </a></li>
-              </ul>
             </div>
-          </div>
         </div>
       </section>
 
-      <section class="lessons">
+      <section class="courses mb-xxhuge">
         <div class="container">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
+          <div class="course-list-title d-flex align-items-center mb-6">
+            <img class="me-2" style="width: 24px; height: 24px;" src="../assets/images/deco/flower-5-big.png" alt="deco-flower">
+            <h3 class="fs-5 fw-bold">六角學院開的課</h3>
           </div>
+            <div class="row g-6">
+              <!-- 卡片一 -->
+              <div class="col-lg-3 col-md-6">
+                <a class="d-md-block d-none" href="#">
+                  <div class="card position-relative">
+                    <!-- 圖片部分 -->
+                     <!-- 標籤 -->
+                      <div class="d-flex align-items-center px-3 py-2 bg-alert-L rounded-7 position-absolute" style="width: 101px; top: 16px; left: 16px;">
+                        <p class="fs-sm text-alert fw-bold">限時 8 折</p>
+                        <img class="d-inline-block" style="width: 14px; height: 14px;" src="../assets/images/icons/ic_fire.png">
+                      </div>
+                    <!-- 主要圖片 -->
+                    <img class="rounded-top-4" src="../assets/images/course-5.png" alt="python course">
+                  <!-- card-body -->
+                  <div class="card-body p-4">
+                    <h4 class="fs-6 fw-bold mb-4" style="height: 48px;">小白也會！從零開始學習 Python 程式設計</h4>
+                      <div class="d-flex justify-content-between">
+                        <!-- 教師名+圖 -->
+                        <div class="teacher-name d-flex align-items-center">
+                          <img class="me-1" style="width: 32px;" src="../assets/images/avatar-2.png" alt="Kelly Hsu">
+                          <p class="text-gray-8">Kelly Hsu</p>
+                        </div>
+                        <!-- 課程價格 -->
+                        <div class="course-price text-end">
+                          <p class="fs-6 fw-bold-700 text-primary">NT$ 2,480</p>
+                          <p class="fs-sm text-gray-8 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- card-footer -->
+                  <div class="card-footer p-4 border-top border-gray-4 rounded-bottom-4 d-flex justify-content-between align-items-center">
+                    <!-- 左半部 -->
+                    <div>
+                      <div class="hashtag rounded-7 bg-gray-4 py-1 px-3 mb-1" style="width: 81px;">
+                        <p class="fs-sm text-gray-8">程式開發</p>
+                      </div>
+                      <p class="fs-sm text-gray-8">已有 420 位同學加入</p>
+                    </div>
+                    <!-- 右半部 -->
+                    <div class="customer-opinion">
+                      <p class="fs-sm fw-bold-500 text-dark align-middle mx-1">
+                        <i class="bi bi-star-fill text-warning"></i>4.0<span class="text-gray-8">(333)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- 卡片二 -->
+              <div class="col-lg-3 col-md-6">
+                <a class="d-md-block d-none" href="#">
+                  <div class="card position-relative">
+                    <!-- 圖片部分 -->
+                     <!-- 標籤 -->
+                      <div class="d-flex align-items-center px-3 py-2 bg-alert-L rounded-7 position-absolute" style="width: 101px; top: 16px; left: 16px;">
+                        <p class="fs-sm text-alert fw-bold">限時 8 折</p>
+                        <img class="d-inline-block" style="width: 14px; height: 14px;" src="../assets/images/icons/ic_fire.png">
+                      </div>
+                    <!-- 主要圖片 -->
+                    <img class="rounded-top-4" src="../assets/images/course-6.png" alt="python course">
+                  <!-- card-body -->
+                  <div class="card-body p-4">
+                    <h4 class="fs-6 fw-bold mb-4" style="height: 48px;">全面掌握 JavaScript 開發技術</h4>
+                      <div class="d-flex justify-content-between">
+                        <!-- 教師名+圖 -->
+                        <div class="teacher-name d-flex align-items-center">
+                          <img class="me-1" style="width: 32px;" src="../assets/images/avatar-2.png" alt="Kelly Hsu">
+                          <p class="text-gray-8">Kelly Hsu</p>
+                        </div>
+                        <!-- 課程價格 -->
+                        <div class="course-price text-end">
+                          <p class="fs-6 fw-bold-700 text-primary">NT$ 2,480</p>
+                          <p class="fs-sm text-gray-8 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- card-footer -->
+                  <div class="card-footer p-4 border-top border-gray-4 rounded-bottom-4 d-flex justify-content-between align-items-center">
+                    <!-- 左半部 -->
+                    <div>
+                      <div class="hashtag rounded-7 bg-gray-4 py-1 px-3 mb-1" style="width: 81px;">
+                        <p class="fs-sm text-gray-8">程式開發</p>
+                      </div>
+                      <p class="fs-sm text-gray-8">已有 420 位同學加入</p>
+                    </div>
+                    <!-- 右半部 -->
+                    <div class="customer-opinion">
+                      <p class="fs-sm fw-bold-500 text-dark align-middle mx-1">
+                        <i class="bi bi-star-fill text-warning"></i>4.0<span class="text-gray-8">(333)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- 卡片三 -->
+              <div class="col-lg-3 col-md-6">
+                <a class="d-md-block d-none" href="#">
+                  <div class="card">
+                    <!-- 圖片部分 -->
+                    <img class="rounded-top-4" src="../assets/images/course-7.png" alt="python course">
+                  <!-- card-body -->
+                  <div class="card-body p-4">
+                    <h4 class="fs-6 fw-bold mb-4" style="height: 48px;">HTML & CSS 網頁設計基礎教程</h4>
+                      <div class="d-flex justify-content-between">
+                        <!-- 教師名+圖 -->
+                        <div class="teacher-name d-flex align-items-center">
+                          <img class="me-1" style="width: 32px;" src="../assets/images/avatar-2.png" alt="Kelly Hsu">
+                          <p class="text-gray-8">Kelly Hsu</p>
+                        </div>
+                        <!-- 課程價格 -->
+                        <div class="course-price text-end">
+                          <p class="fs-6 fw-bold-700 text-primary">NT$ 2,480</p>
+                          <p class="fs-sm text-gray-8 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- card-footer -->
+                  <div class="card-footer p-4 border-top border-gray-4 rounded-bottom-4 d-flex justify-content-between align-items-center">
+                    <!-- 左半部 -->
+                    <div>
+                      <div class="hashtag rounded-7 bg-gray-4 py-1 px-3 mb-1" style="width: 81px;">
+                        <p class="fs-sm text-gray-8">程式開發</p>
+                      </div>
+                      <p class="fs-sm text-gray-8">已有 420 位同學加入</p>
+                    </div>
+                    <!-- 右半部 -->
+                    <div class="customer-opinion">
+                      <p class="fs-sm fw-bold-500 text-dark align-middle mx-1">
+                        <i class="bi bi-star-fill text-warning"></i>4.0<span class="text-gray-8">(333)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- 卡片四 -->
+              <div class="col-lg-3 col-md-6">
+                <a class="d-md-block d-none" href="#">
+                  <div class="card">
+                    <!-- 主要圖片 -->
+                    <img class="rounded-top-4" src="../assets/images/course-8.png" alt="python course">
+                  <!-- card-body -->
+                  <div class="card-body p-4">
+                    <h4 class="fs-6 fw-bold mb-4" style="height: 48px;">更進一步！深入學習 Node.js 與後端開發</h4>
+                      <div class="d-flex justify-content-between">
+                        <!-- 教師名+圖 -->
+                        <div class="teacher-name d-flex align-items-center">
+                          <img class="me-1" style="width: 32px;" src="../assets/images/avatar-2.png" alt="Kelly Hsu">
+                          <p class="text-gray-8">Kelly Hsu</p>
+                        </div>
+                        <!-- 課程價格 -->
+                        <div class="course-price text-end">
+                          <p class="fs-6 fw-bold-700 text-primary">NT$ 2,480</p>
+                          <p class="fs-sm text-gray-8 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- card-footer -->
+                  <div class="card-footer p-4 border-top border-gray-4 rounded-bottom-4 d-flex justify-content-between align-items-center">
+                    <!-- 左半部 -->
+                    <div>
+                      <div class="hashtag rounded-7 bg-gray-4 py-1 px-3 mb-1" style="width: 81px;">
+                        <p class="fs-sm text-gray-8">程式開發</p>
+                      </div>
+                      <p class="fs-sm text-gray-8">已有 420 位同學加入</p>
+                    </div>
+                    <!-- 右半部 -->
+                    <div class="customer-opinion">
+                      <p class="fs-sm fw-bold-500 text-dark align-middle mx-1">
+                        <i class="bi bi-star-fill text-warning"></i>4.0<span class="text-gray-8">(333)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+           </div>
         </div>
       </section>
     </main>
@@ -94,5 +246,6 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
