@@ -37,7 +37,7 @@
             </nav>
             <h2 class="banner-title fs-2 fs-lg-1 fw-bold">程式課程</h2>
             <!-- 程式課程 Swiper -->
-            <div class="swiper course-list-swiper d-flex">
+            <div class="swiper course-list-swiper">
               <div class="swiper-wrapper">
                 <!-- 1 -->
                 <div class="swiper-slide">
@@ -92,7 +92,7 @@
                   <a class="btn rounded-2 swiper-item" href="#">無程式碼開發</a>
                 </div>
               </div>
-              <div class="course-list-swiper-button-next p-3">
+              <div class="course-list-swiper-button-next p-3 z-1">
                 <span class="material-symbols-outlined"> chevron_right </span>
               </div>
             </div>
@@ -100,13 +100,74 @@
         </div>
       </section>
 
+      <!-- 放 section外測試 -->
+      <div class="container">
+        <div class="swiper course-list-swiper">
+          <div class="swiper-wrapper">
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <a class="btn btn-primary rounded-2 py-3 px-4" href="#"
+                >所有程式</a
+              >
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">網頁開發</a>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">資料科學</a>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">行動版開發</a>
+            </div>
+            <!-- 5 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">程式語言</a>
+            </div>
+            <!-- 6 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">遊戲開發</a>
+            </div>
+            <!-- 7 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">資料庫設計與開發</a>
+            </div>
+            <!-- 8 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">軟體測試</a>
+            </div>
+            <!-- 9 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">軟體開發工具</a>
+            </div>
+            <!-- 10 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">無程式碼開發</a>
+            </div>
+            <!-- 11 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">軟體開發工具</a>
+            </div>
+            <!-- 12 -->
+            <div class="swiper-slide">
+              <a class="btn rounded-2 swiper-item" href="#">無程式碼開發</a>
+            </div>
+          </div>
+          <div class="course-list-swiper-button-next p-3 z-1">
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </div>
+        </div>
+      </div>
+
       <!-- 課程導覽列 & 課程卡片 Swiper -->
       <!-- section-2 -->
       <section class="section-2-bg">
         <div class="container">
           <div class="row">
             <!-- 導覽列 -->
-            <ul class="nav gap-7 border-bottom px-2">
+            <ul class="nav gap-7 border-bottom px-2 mb-m mb-md-xl">
               <li class="nav-item">
                 <a
                   class="course-nav-link course-nav-item-bottom-line course-nav-link-active"
@@ -127,11 +188,11 @@
               </li>
             </ul>
             <!-- 課程卡片 Swiper -->
-            <div class="col-12 mt-m mt-lg-xl">
+            <div class="col-12">
               <div class="swiper course-card-swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper position-relative">
                   <!-- course-card-1 -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide pb-m pb-md-xl">
                     <a class="card-link" href="#">
                       <div class="card position-relative">
                         <!-- 定位標籤 -->
@@ -207,8 +268,204 @@
                       </div>
                     </a>
                   </div>
-                  <!-- course-card-card-2 -->
-                  <div class="swiper-slide">
+                  <!-- course-card-2 -->
+                  <div class="swiper-slide pb-m pb-md-xl">
+                    <a class="card-link" href="#">
+                      <div class="card card-tag position-relative">
+                        <!-- 定位標籤 -->
+                        <div
+                          class="py-2 px-3 bg-alert-L position-absolute rounded-7"
+                          style="max-width: 101px; top: 16px; left: 16px"
+                        >
+                          <div class="d-flex">
+                            <span
+                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
+                              >限時 8 折</span
+                            ><img
+                              style="width: 16px; height: 16px"
+                              src="/assets/images/icons/ic_fire.png"
+                              alt="fire"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          class="rounded-top-4"
+                          src="/assets/images/course-6.png"
+                          alt=""
+                        />
+                        <div class="p-4">
+                          <!-- card-title -->
+                          <h4 class="fs-6 fw-bold mb-4">
+                            全面掌握 JavaScript 開發技術
+                          </h4>
+                          <!-- card-body -->
+                          <div class="course-card-body">
+                            <section class="d-flex align-items-center">
+                              <img
+                                class="course-card-avatar object-fit-cover"
+                                src="/assets/images/avatar-2.png"
+                                alt="Kelly Hsu"
+                              />
+                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
+                            </section>
+                            <section>
+                              <p class="text-primary fs-6 fw-bold-700">
+                                NT$ 2,480
+                              </p>
+                              <p class="text-style-1 fs-sm text-end">
+                                NT$ 3,200
+                              </p>
+                            </section>
+                          </div>
+                        </div>
+                        <!-- card-footer -->
+                        <div class="course-card-footer rounded-bottom-4">
+                          <section>
+                            <p
+                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
+                              style="max-width: 81px"
+                            >
+                              程式開發
+                            </p>
+                            <p class="mt-1 text-gray-8 fs-sm">
+                              已有 420 位同學加入
+                            </p>
+                          </section>
+                          <section>
+                            <p>
+                              <i
+                                class="bi bi-star-fill text-warning align-bottom"
+                              ></i
+                              ><span class="fs-sm text-dark mx-1">4.0</span
+                              ><span class="text-style-2 fs-sm">(333)</span>
+                            </p>
+                          </section>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- course-card-3 -->
+                  <div class="swiper-slide pb-m pb-md-xl">
+                    <a class="card-link" href="#">
+                      <div class="card">
+                        <img
+                          class="rounded-top-4"
+                          src="/assets/images/course-7.png"
+                          alt=""
+                        />
+                        <div class="p-4">
+                          <!-- card-title -->
+                          <h4 class="fs-6 fw-bold mb-4">
+                            HTML & CSS 網頁設計基礎教程
+                          </h4>
+                          <!-- card-body -->
+                          <div class="course-card-body">
+                            <section class="d-flex align-items-center">
+                              <img
+                                class="course-card-avatar object-fit-cover"
+                                src="/assets/images/avatar-2.png"
+                                alt="Kelly Hsu"
+                              />
+                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
+                            </section>
+                            <section>
+                              <p class="text-primary fs-6 fw-bold-700">
+                                NT$ 2,480
+                              </p>
+                              <p class="text-style-1 fs-sm text-end">
+                                NT$ 3,200
+                              </p>
+                            </section>
+                          </div>
+                        </div>
+                        <!-- card-footer -->
+                        <div class="course-card-footer rounded-bottom-4">
+                          <section>
+                            <p
+                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
+                              style="max-width: 81px"
+                            >
+                              程式開發
+                            </p>
+                            <p class="mt-1 text-gray-8 fs-sm">
+                              已有 420 位同學加入
+                            </p>
+                          </section>
+                          <section>
+                            <p>
+                              <i
+                                class="bi bi-star-fill text-warning align-bottom"
+                              ></i
+                              ><span class="fs-sm text-dark mx-1">4.0</span
+                              ><span class="text-style-2 fs-sm">(333)</span>
+                            </p>
+                          </section>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- course-card-4 -->
+                  <div class="swiper-slide pb-m pb-md-xl">
+                    <a class="card-link" href="#">
+                      <div class="card">
+                        <img
+                          class="rounded-top-4"
+                          src="/assets/images/course-8.png"
+                          alt=""
+                        />
+                        <div class="p-4">
+                          <!-- card-title -->
+                          <h4 class="fs-6 fw-bold mb-4">
+                            更進一步！深入學習 Node.js 與後端開發
+                          </h4>
+                          <!-- card-body -->
+                          <div class="course-card-body">
+                            <section class="d-flex align-items-center">
+                              <img
+                                class="course-card-avatar object-fit-cover"
+                                src="/assets/images/avatar-2.png"
+                                alt="Kelly Hsu"
+                              />
+                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
+                            </section>
+                            <section>
+                              <p class="text-primary fs-6 fw-bold-700">
+                                NT$ 2,480
+                              </p>
+                              <p class="text-style-1 fs-sm text-end">
+                                NT$ 3,200
+                              </p>
+                            </section>
+                          </div>
+                        </div>
+                        <!-- card-footer -->
+                        <div class="course-card-footer rounded-bottom-4">
+                          <section>
+                            <p
+                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
+                              style="max-width: 81px"
+                            >
+                              程式開發
+                            </p>
+                            <p class="mt-1 text-gray-8 fs-sm">
+                              已有 420 位同學加入
+                            </p>
+                          </section>
+                          <section>
+                            <p>
+                              <i
+                                class="bi bi-star-fill text-warning align-bottom"
+                              ></i
+                              ><span class="fs-sm text-dark mx-1">4.0</span
+                              ><span class="text-style-2 fs-sm">(333)</span>
+                            </p>
+                          </section>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- course-card-5 -->
+                  <div class="swiper-slide pb-m pb-md-xl">
                     <a class="card-link" href="#">
                       <div class="card position-relative">
                         <!-- 定位標籤 -->
@@ -284,13 +541,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- course-card-card-3 -->
-                  <div class="swiper-slide">
+                  <!-- course-card-6 -->
+                  <div class="swiper-slide pb-m pb-md-xl">
                     <a class="card-link" href="#">
-                      <div class="card position-relative">
+                      <div class="card card-tag position-relative">
                         <!-- 定位標籤 -->
                         <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7 d-none d-md-block"
+                          class="py-2 px-3 bg-alert-L position-absolute rounded-7"
                           style="max-width: 101px; top: 16px; left: 16px"
                         >
                           <div class="d-flex">
@@ -306,245 +563,13 @@
                         </div>
                         <img
                           class="rounded-top-4"
-                          src="/assets/images/course-5.png"
+                          src="/assets/images/course-6.png"
                           alt=""
                         />
-                        <!-- card-title & card-body -->
                         <div class="p-4">
                           <!-- card-title -->
                           <h4 class="fs-6 fw-bold mb-4">
-                            小白也會！從零開始學習 Python 程式設計
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-card-4 -->
-                  <div class="swiper-slide">
-                    <a class="card-link" href="#">
-                      <div class="card position-relative">
-                        <!-- 定位標籤 -->
-                        <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7 d-none d-md-block"
-                          style="max-width: 101px; top: 16px; left: 16px"
-                        >
-                          <div class="d-flex">
-                            <span
-                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
-                              >限時 8 折</span
-                            ><img
-                              style="width: 16px; height: 16px"
-                              src="/assets/images/icons/ic_fire.png"
-                              alt="fire"
-                            />
-                          </div>
-                        </div>
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-5.png"
-                          alt=""
-                        />
-                        <!-- card-title & card-body -->
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            小白也會！從零開始學習 Python 程式設計
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-card-5 -->
-                  <div class="swiper-slide">
-                    <a class="card-link" href="#">
-                      <div class="card position-relative">
-                        <!-- 定位標籤 -->
-                        <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7 d-none d-md-block"
-                          style="max-width: 101px; top: 16px; left: 16px"
-                        >
-                          <div class="d-flex">
-                            <span
-                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
-                              >限時 8 折</span
-                            ><img
-                              style="width: 16px; height: 16px"
-                              src="/assets/images/icons/ic_fire.png"
-                              alt="fire"
-                            />
-                          </div>
-                        </div>
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-5.png"
-                          alt=""
-                        />
-                        <!-- card-title & card-body -->
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            小白也會！從零開始學習 Python 程式設計
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-card-6 -->
-                  <div class="swiper-slide">
-                    <a class="card-link" href="#">
-                      <div class="card position-relative">
-                        <!-- 定位標籤 -->
-                        <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7 d-none d-md-block"
-                          style="max-width: 101px; top: 16px; left: 16px"
-                        >
-                          <div class="d-flex">
-                            <span
-                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
-                              >限時 8 折</span
-                            ><img
-                              style="width: 16px; height: 16px"
-                              src="/assets/images/icons/ic_fire.png"
-                              alt="fire"
-                            />
-                          </div>
-                        </div>
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-5.png"
-                          alt=""
-                        />
-                        <!-- card-title & card-body -->
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            小白也會！從零開始學習 Python 程式設計
+                            全面掌握 JavaScript 開發技術
                           </h4>
                           <!-- card-body -->
                           <div class="course-card-body">
@@ -594,11 +619,19 @@
                   </div>
                 </div>
                 <!-- Swiper-button -->
-                <div class="course-swiper-button-prev">
-                  <i class="bi bi-arrow-left-short text-primary fs-5"></i>
+                <div
+                  class="course-swiper-button-next course-swiper-button-next-position"
+                >
+                  <i
+                    class="bi bi-arrow-right-short fs-5 course-swiper-button-arrow-right-short"
+                  ></i>
                 </div>
-                <div class="course-swiper-button-next">
-                  <i class="bi bi-arrow-right-short text-primary fs-5"></i>
+                <div
+                  class="course-swiper-button-prev course-swiper-button-prev-position"
+                >
+                  <i
+                    class="bi bi-arrow-left-short fs-5 course-swiper-button-arrow-left-short"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -608,24 +641,29 @@
 
       <!-- 熱門主題 -->
       <!-- section-3 -->
-      <section class="py-m py-lg-xl">
+      <section class="pb-m pb-lg-xl">
         <div class="container">
           <div class="mb-m d-flex justify-content-between align-items-center">
             <h3 class="fs-6 fs-lg-3 fw-bold">熱門主題</h3>
+            <!-- Swiper-navigation -->
             <section class="d-flex">
               <div class="hot-swiper-button-prev me-3">
-                <i class="bi bi-arrow-left-short fs-2"></i>
+                <i
+                  class="bi bi-arrow-left-short fs-2 navigation-arrow-left-short"
+                ></i>
               </div>
               <div class="hot-swiper-button-next">
-                <i class="bi bi-arrow-right-short fs-2"></i>
+                <i
+                  class="bi bi-arrow-right-short fs-2 navigation-arrow-right-short"
+                ></i>
               </div>
             </section>
           </div>
           <div class="row">
             <div class="col-12">
               <!-- 熱門主題 Swiper -->
-              <div class="swiper hotTopicSwiper">
-                <div class="swiper-wrapper mb-lg-m">
+              <div class="swiper hotTopicSwiper pb-lg-m">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div
                       class="text-center py-6 rounded-2 border border-1 border-gray-4"
@@ -699,7 +737,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination d-none d-lg-block"></div>
               </div>
             </div>
           </div>
@@ -854,7 +892,7 @@
           </div>
           <div class="row g-6">
             <!-- 1 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card position-relative">
                   <!-- 定位標籤 -->
@@ -944,14 +982,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -1007,7 +1045,7 @@
               >
             </div>
             <!-- 2 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -1034,7 +1072,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      全面掌握 JavaScript 開發技<br />術
+                      全面掌握 JavaScript 開發技術
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -1096,14 +1134,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -1159,7 +1197,7 @@
               >
             </div>
             <!-- 3 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -1170,7 +1208,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      HTML & CSS 網頁設計基礎教<br />程
+                      HTML & CSS 網頁設計基礎教程
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -1232,14 +1270,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -1295,7 +1333,7 @@
               >
             </div>
             <!-- 4 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -1368,14 +1406,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -1431,7 +1469,7 @@
               >
             </div>
             <!-- 5 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -1520,14 +1558,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -1583,7 +1621,7 @@
               >
             </div>
             <!-- 6 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -1610,7 +1648,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      全面掌握 JavaScript 開發技<br />術
+                      全面掌握 JavaScript 開發技術
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -1672,14 +1710,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -1735,7 +1773,7 @@
               >
             </div>
             <!-- 7 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -1746,7 +1784,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      HTML & CSS 網頁設計基礎教<br />程
+                      HTML & CSS 網頁設計基礎教程
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -1808,14 +1846,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -1871,7 +1909,7 @@
               >
             </div>
             <!-- 8 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -1944,14 +1982,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -2007,7 +2045,7 @@
               >
             </div>
             <!-- 9 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -2096,14 +2134,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -2159,7 +2197,7 @@
               >
             </div>
             <!-- 10 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -2186,7 +2224,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      全面掌握 JavaScript 開發技<br />術
+                      全面掌握 JavaScript 開發技術
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -2248,14 +2286,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -2311,7 +2349,7 @@
               >
             </div>
             <!-- 11 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -2322,7 +2360,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      HTML & CSS 網頁設計基礎教<br />程
+                      HTML & CSS 網頁設計基礎教程
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -2384,14 +2422,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -2447,7 +2485,7 @@
               >
             </div>
             <!-- 12 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -2520,14 +2558,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -2583,7 +2621,7 @@
               >
             </div>
             <!-- 13 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -2672,14 +2710,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -2735,7 +2773,7 @@
               >
             </div>
             <!-- 14 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -2762,7 +2800,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      全面掌握 JavaScript 開發技<br />術
+                      全面掌握 JavaScript 開發技術
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -2824,14 +2862,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -2887,7 +2925,7 @@
               >
             </div>
             <!-- 15 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -2898,7 +2936,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      HTML & CSS 網頁設計基礎教<br />程
+                      HTML & CSS 網頁設計基礎教程
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -2960,14 +2998,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -3023,7 +3061,7 @@
               >
             </div>
             <!-- 16 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -3096,14 +3134,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -3159,7 +3197,7 @@
               >
             </div>
             <!-- 17 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -3248,14 +3286,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -3311,7 +3349,7 @@
               >
             </div>
             <!-- 18 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -3338,7 +3376,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      全面掌握 JavaScript 開發技<br />術
+                      全面掌握 JavaScript 開發技術
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -3400,14 +3438,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -3463,7 +3501,7 @@
               >
             </div>
             <!-- 19 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -3474,7 +3512,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      HTML & CSS 網頁設計基礎教<br />程
+                      HTML & CSS 網頁設計基礎教程
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -3536,14 +3574,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -3599,7 +3637,7 @@
               >
             </div>
             <!-- 20 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -3672,14 +3710,14 @@
                     <!-- card-image -->
                     <section class="me-2">
                       <img
-                        class="rounded-2"
+                        class="rounded-2 object-fit-cover"
                         style="width: 100px; height: 100px"
                         src="/assets/images/course-5.png"
                         alt=""
                       />
                     </section>
                     <!-- card-title & card-body & card-footer-->
-                    <section>
+                    <section style="max-width: 243px">
                       <!-- card-title & card-body -->
                       <div class="pb-2">
                         <!-- card-title -->
@@ -3735,7 +3773,7 @@
               >
             </div>
             <!-- 21 -->
-            <div class="col-md-6 col-lg-3 d-none d-md-block">
+            <div class="col-md-6 col-lg-4 col-xl-3 d-none d-md-block">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -3803,7 +3841,7 @@
               </a>
             </div>
             <!-- 22 -->
-            <div class="col-md-6 col-lg-3 d-none d-md-block">
+            <div class="col-md-6 col-lg-4 col-xl-3 d-none d-md-block">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card card-tag position-relative">
                   <!-- 定位標籤 -->
@@ -3830,7 +3868,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      全面掌握 JavaScript 開發技<br />術
+                      全面掌握 JavaScript 開發技術
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -3871,7 +3909,7 @@
               </a>
             </div>
             <!-- 23 -->
-            <div class="col-md-6 col-lg-3 d-none d-md-block">
+            <div class="col-md-6 col-lg-4 col-xl-3 d-none d-md-block">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -3882,7 +3920,7 @@
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
-                      HTML & CSS 網頁設計基礎教<br />程
+                      HTML & CSS 網頁設計基礎教程
                     </h4>
                     <!-- card-body -->
                     <div class="course-card-body">
@@ -3923,7 +3961,7 @@
               </a>
             </div>
             <!-- 24 -->
-            <div class="col-md-6 col-lg-3 d-none d-md-block">
+            <div class="col-md-6 col-lg-4 col-xl-3 d-none d-md-block">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
                   <img
@@ -3976,7 +4014,6 @@
             </div>
           </div>
           <!-- pagination -->
-
           <ul
             class="mt-m d-flex list-unstyled justify-content-center justify-content-lg-end align-items-center gap-2"
           >
@@ -4038,7 +4075,7 @@
           <div class="container">
             <!-- desktop -->
             <div
-              class="row flex-lg-row flex-column justify-content-between align-items-center d-none d-lg-flex"
+              class="row flex-lg-row flex-column justify-content-between align-items-center d-none d-md-flex"
             >
               <!-- list-left -->
               <ul class="col-lg-3 d-flex flex-column list-unstyled mb-0 gap-6">
@@ -4195,151 +4232,172 @@
                 </div>
               </div>
             </div>
-            <!-- mobile-swiper -->
-            <div class="swiper category-swiper d-block d-md-none">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <ul>
-                    <!-- 1 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="icon-bg-1 p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/megaphoneSimple.png"
-                          alt="megaphoneSimple"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">網路行銷</h6>
-                        <p class="fs-sm text-gray">342 門課程</p>
-                      </section>
-                    </li>
-                    <!-- 3 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="icon-bg-3 p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/bugDroid.png"
-                          alt="bugDroid"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">數據分析</h6>
-                        <p class="fs-sm text-gray">395 門課程</p>
-                      </section>
-                    </li>
-                  </ul>
-                </div>
-                <div class="swiper-slide">
-                  <ul>
-                    <!-- 5 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="icon-bg-5 p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/camera.png"
-                          alt="camera"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">拍攝剪輯</h6>
-                        <p class="fs-sm text-gray">563 門課程</p>
-                      </section>
-                    </li>
-                    <!-- 7 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="icon-bg-7 p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/creditCard.png"
-                          alt="creditCard"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">投資理財</h6>
-                        <p class="fs-sm text-gray">486 門課程</p>
-                      </section>
-                    </li>
-                  </ul>
-                </div>
-                <div class="swiper-slide">
-                  <ul>
-                    <!-- 2 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="icon-bg-2 p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/chartBarHorizontal.png"
-                          alt="chartBarHorizontal"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">自我成長</h6>
-                        <p class="fs-sm text-gray">490 門課程</p>
-                      </section>
-                    </li>
-                    <!-- 4 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="icon-bg-4 p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/headphones.png"
-                          alt="headphones"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">音樂創作</h6>
-                        <p class="fs-sm text-gray">283 門課程</p>
-                      </section>
-                    </li>
-                  </ul>
-                </div>
-                <div class="swiper-slide">
-                  <ul>
-                    <!-- 6 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="icon-bg-6 p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/penNib.png"
-                          alt="penNib"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">藝術設計</h6>
-                        <p class="fs-sm text-gray">230 門課程</p>
-                      </section>
-                    </li>
-                    <!-- 8 -->
-                    <li class="d-flex bg-white p-5 rounded-4">
-                      <section class="bg-primary p-4 rounded-3">
-                        <img
-                          style="width: 32px; height: 32px"
-                          src="/assets/images/icons/arrow.png"
-                          alt="arrow"
-                        />
-                      </section>
-                      <section
-                        class="ms-5 d-flex flex-column justify-content-center gap-2"
-                      >
-                        <h6 class="fs-base fw-bold">探索更多</h6>
-                      </section>
-                    </li>
-                  </ul>
+            <!-- mobile RWD -->
+            <div class="d-block d-md-none">
+              <div class="d-flex flex-column mb-m">
+                <section>
+                  <img
+                    class="object-fit-cover"
+                    src="/assets/images/deco/polygon-1.png"
+                    alt=""
+                  />
+                </section>
+                <section>
+                  <h3 class="fs-1 text-white">想學什麼嗎？</h3>
+                  <h3 class="fs-1 text-white">一探究竟。</h3>
+                  <img
+                    class="w-100"
+                    src="/assets/images/deco/line-2.png"
+                    alt=""
+                  />
+                </section>
+              </div>
+              <!-- mobile-swiper -->
+              <div class="swiper category-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <ul>
+                      <!-- 1 -->
+                      <li class="d-flex bg-white p-5 rounded-4 mb-6">
+                        <section class="icon-bg-1 p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/megaphoneSimple.png"
+                            alt="megaphoneSimple"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">網路行銷</h6>
+                          <p class="fs-sm text-gray">342 門課程</p>
+                        </section>
+                      </li>
+                      <!-- 3 -->
+                      <li class="d-flex bg-white p-5 rounded-4">
+                        <section class="icon-bg-3 p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/bugDroid.png"
+                            alt="bugDroid"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">數據分析</h6>
+                          <p class="fs-sm text-gray">395 門課程</p>
+                        </section>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul>
+                      <!-- 5 -->
+                      <li class="d-flex bg-white p-5 rounded-4 mb-6">
+                        <section class="icon-bg-5 p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/camera.png"
+                            alt="camera"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">拍攝剪輯</h6>
+                          <p class="fs-sm text-gray">563 門課程</p>
+                        </section>
+                      </li>
+                      <!-- 7 -->
+                      <li class="d-flex bg-white p-5 rounded-4">
+                        <section class="icon-bg-7 p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/creditCard.png"
+                            alt="creditCard"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">投資理財</h6>
+                          <p class="fs-sm text-gray">486 門課程</p>
+                        </section>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul>
+                      <!-- 2 -->
+                      <li class="d-flex bg-white p-5 rounded-4 mb-6">
+                        <section class="icon-bg-2 p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/chartBarHorizontal.png"
+                            alt="chartBarHorizontal"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">自我成長</h6>
+                          <p class="fs-sm text-gray">490 門課程</p>
+                        </section>
+                      </li>
+                      <!-- 4 -->
+                      <li class="d-flex bg-white p-5 rounded-4">
+                        <section class="icon-bg-4 p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/headphones.png"
+                            alt="headphones"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">音樂創作</h6>
+                          <p class="fs-sm text-gray">283 門課程</p>
+                        </section>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul>
+                      <!-- 6 -->
+                      <li class="d-flex bg-white p-5 rounded-4 mb-6">
+                        <section class="icon-bg-6 p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/penNib.png"
+                            alt="penNib"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">藝術設計</h6>
+                          <p class="fs-sm text-gray">230 門課程</p>
+                        </section>
+                      </li>
+                      <!-- 8 -->
+                      <li class="d-flex bg-white p-5 rounded-4">
+                        <section class="bg-primary p-4 rounded-3">
+                          <img
+                            style="width: 32px; height: 32px"
+                            src="/assets/images/icons/arrow.png"
+                            alt="arrow"
+                          />
+                        </section>
+                        <section
+                          class="ms-5 d-flex flex-column justify-content-center gap-2"
+                        >
+                          <h6 class="fs-base fw-bold">探索更多</h6>
+                        </section>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
