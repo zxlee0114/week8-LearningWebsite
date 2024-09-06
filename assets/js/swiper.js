@@ -5,27 +5,34 @@ import Swiper from "swiper/bundle";
 // Start
 
 const heroSwiper = new Swiper(".heroSwiper", {
-  // 循環播放
-  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
   // 左右箭頭
   navigation: {
     prevEl: ".heroSwiper-button-prev",
     nextEl: ".heroSwiper-button-next",
   },
-  slidesPerView: 1,
-  centeredSlides: true, //active slide 置中
+  pagination: {
+    el: ".heroSwiper-pagination",
+  },
 
+  watchSlidesProgress: true,
   breakpoints: {
     768: {
-      slidesPerView: 1.2, // slide 預覽
-      spaceBetween: 40, // slide 間距
+      spaceBetween: 15, // slide 間距
     },
+    992: {
+      spaceBetween: 40, // slide 間距
+    }
   },
+  // 循環播放
+  loop: true,
   // 自動撥放
   autoplay: {
     delay: 2000,
   },
 });
+
 // 參考文章：https://blog.csdn.net/qq_42855675/article/details/112850049
 
 const hotCategorySwiper = new Swiper('.hotCategorySwiper', {
@@ -84,9 +91,9 @@ const courseListSwiper = new Swiper(".course-list-swiper", {
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 8, // 每個內容之間的間隔為 8px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
-
+  
   loop: true, // 循環播放
-
+  
   // 左右箭頭 功能設定
   navigation: {
     nextEl: ".course-list-swiper-button-next",
@@ -143,8 +150,8 @@ const courseSwiper = new Swiper(".course-card-swiper", {
       spaceBetween: 24, // 每個內容之間的間隔為 24px
     },
 
-    767: {
-      slidesPerView: 2, // 一次呈現幾張
+    768: {
+      slidesPerView: 2.3, // 一次呈現幾張
       slidesPerGroup: 1, // 一個群組內有幾張投影片
       spaceBetween: 24, // 每個內容之間的間隔為 24px
     },
@@ -215,3 +222,43 @@ const categorySwiper = new Swiper(".categorySwiper", {
   }
   //swipwer行列式，參考文章：https://stackoverflow.com/questions/72873652/swiper-js-rows-2-is-stacking-everything-resulting-in-infinite-rows
 });
+
+
+
+
+// const testSwiper = new Swiper(".testSwiper", {
+//   slidesPerView: 4,
+  
+//   pagination: {
+//     el: ".testSwiper-pagination",
+//   },
+//   spaceBetween: 24,
+//   watchSlidesProgress: true,
+//   breakpoints: {
+//     992: {
+//       navigation: {
+//         nextEl: ".testSwiper-button-next",
+//         prevEl: ".testSwiper-button-prev",
+//       },
+//     }
+//   }
+// });
+
+// const testSwiper2 = new Swiper(".testSwiper2", {
+//   slidesPerView: 1,
+//   centeredSlides: true,
+//   pagination: {
+//     el: ".testSwiper2-pagination",
+//   },
+//   spaceBetween: 40,
+//   watchSlidesProgress: true,
+//   breakpoints: {
+//     992: {
+//       navigation: {
+//         nextEl: ".testSwiper2-button-next",
+//         prevEl: ".testSwiper2-button-prev",
+//       },
+//     }
+//   },
+//   loop:true,
+// });
