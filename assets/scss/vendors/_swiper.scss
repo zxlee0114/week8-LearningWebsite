@@ -6,38 +6,56 @@
   }
 }
 
-.heroSwiper-button-prev , .heroSwiper-button-next {
-  display: none;
+// —來自Ann Chou發佈於Ann Chou的沙龍 https://vocus.cc/article/66124270fd89780001f54193
+.heroSwiperWrap.container {
+  padding: 0px;
+  @media (min-width:992px) {
+    max-width: 1920px ;
+    padding: 0 160px;
+  }
+}
+.swiper.heroSwiper {
   @media (min-width:768px) {
-    display: block;
+    margin: 0 -28px !important; 
+    padding: 0 28px !important;
+  }
+  @media (min-width:992px) {
+    margin: 0 -160px !important; 
+    padding: 0 160px !important;
   }
 }
 
-.heroSwiper-button-prev {
-  left: 7%;
-  &::after {
+.swiper-button-prev.heroSwiper-button-prev::after {
+  content: "";
+  @media (min-width:768px) {
     content: "\e5c4";
     font-family: "Material Symbols Outlined";
     font-size: 24px;
-    color: $primary;
-    padding: .875rem 1rem;
+    padding: 1rem;
     background: $white;
     border-radius: 12px;
     box-shadow: 0px 10px 15px -3px #0000001A;
+    margin-left: 16px; // new
+  }
+  @media (min-width:992px) {
+    margin-left: 272px; // new
   }
 }
 
-.heroSwiper-button-next {
-  right: 7%;
-  &::after {
+.swiper-button-next.heroSwiper-button-next::after {
+  content: "";
+  @media (min-width:768px) {
     content: "\e5c8";
     font-family: "Material Symbols Outlined";
     font-size: 24px;
-    color: $primary;
-    padding: .875rem 1rem;
+    padding: 1rem;
     background: $white;
     border-radius: 12px;
     box-shadow: 0px 10px 15px -3px #0000001A;
+    margin-right: 16px; // new
+  }
+  @media (min-width:992px) {
+    margin-right: 272px; // new
   }
 }
 
@@ -51,3 +69,69 @@
   width: 24px;
   border-radius: $border-radius-pill;
 }
+
+@import "../layout/_courseCardSwiper";
+
+
+// // test
+// // 參考：https://vocus.cc/article/66124270fd89780001f54193
+// .swiper.testSwiper {
+//   padding: 28px;
+// }
+
+// .testSwiper .swiper-slide {
+//   visibility: hidden;
+// }
+
+// .testSwiper .swiper-slide-visible {
+//   visibility: visible;
+// }
+
+// .swiper-button-next.testSwiper-button-next::after {
+//   font-family: 'Material Symbols Outlined';
+//   content: "\e5c8";
+//   font-size: 24px;
+//   padding: 16px;
+//   background: #FFF;
+//   border-radius: 20px;
+//   box-shadow: 0px 10px 15px -3px #0000001A;
+// }
+
+// .test-container {
+//   max-width: 1376px ;
+// }
+
+
+
+
+// // —來自Ann Chou發佈於Ann Chou的沙龍 https://vocus.cc/article/66124270fd89780001f54193
+// .swiper.testSwiper2 {
+//   margin: 0 -160px !important; 
+//   padding: 0 160px !important;
+// }
+// .swiper-button-next.testSwiper2-button-next::after {
+//   font-family: 'Material Symbols Outlined';
+//   content: "\e5c8";
+//   font-size: 24px;
+//   padding: 16px;
+//   margin-right: 272px;
+//   background: #FFF;
+//   border-radius: 20px;
+//   box-shadow: 0px 10px 15px -3px #0000001A;
+// }
+// .swiper-button-prev.testSwiper2-button-prev::after{
+//   font-family: 'Material Symbols Outlined';
+//   content: "\e5c4";
+//   font-size: 24px;
+//   padding: 16px;
+//   margin-left: 272px;
+//   background: #FFF;
+//   border-radius: 20px;
+//   box-shadow: 0px 10px 15px -3px #0000001A;
+// }
+
+// .test-container2 {
+//   max-width: 1920px ;
+//   padding: 0 160px;
+// }
+
