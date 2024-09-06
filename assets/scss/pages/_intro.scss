@@ -73,10 +73,13 @@
   border-top-right-radius: 8px;
 }
 .introHeading-target{
-  margin-top: -60px;
-  padding-top: 60px;
+  margin-top: -214px;
+  padding-top: 214px;
+  @media(max-width: 992px){
+    margin-top: -126px;
+    padding-top: 126px;
+  }
 }
-
 .introHeading-block{
   width: 32px;
   height: 4px;
