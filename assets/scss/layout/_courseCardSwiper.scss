@@ -116,3 +116,9 @@
         background: $primary;
     }
 }
+
+.hexs-courses {
+    .swiper-button-next , .swiper-button-prev {
+        display: none;
+    }
+}
