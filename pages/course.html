@@ -16,7 +16,7 @@
     <main>
       <!-- banner -->
       <!-- section-1 -->
-      <section class="banner-bg">
+      <section class="banner-bg overflow-hidden">
         <div class="banner-deco">
           <div class="container position-relative z-3">
             <!-- breadcrumb -->
@@ -30,7 +30,7 @@
                 </li>
               </ul>
             </nav>
-            <h2 class="banner-title fs-2 fs-lg-1 fw-bold">程式課程</h2>
+            <h2 class="banner-title fs-2 fs-lg-1 fw-bold fs-3">程式課程</h2>
           </div>
         </div>
         <div class="container d-flex">
@@ -57,37 +57,37 @@
                 <a class="btn rounded-2 swiper-item" href="#">程式語言</a>
               </div>
               <!-- 6 -->
-              <div class="swiper-slide  w-auto">
+              <div class="swiper-slide w-auto">
                 <a class="btn rounded-2 swiper-item" href="#">遊戲開發</a>
               </div>
               <!-- 7 -->
-              <div class="swiper-slide  w-auto">
+              <div class="swiper-slide w-auto">
                 <a class="btn rounded-2 swiper-item" href="#">資料庫設計與開發</a>
               </div>
               <!-- 8 -->
-              <div class="swiper-slide  w-auto">
+              <div class="swiper-slide w-auto">
                 <a class="btn rounded-2 swiper-item" href="#">軟體測試</a>
               </div>
               <!-- 9 -->
-              <div class="swiper-slide  w-auto">
+              <div class="swiper-slide w-auto">
                 <a class="btn rounded-2 swiper-item" href="#">軟體開發工具</a>
               </div>
               <!-- 10 -->
-              <div class="swiper-slide  w-auto">
+              <div class="swiper-slide w-auto">
                 <a class="btn rounded-2 swiper-item" href="#">無程式碼開發</a>
               </div>
               <!-- 11 -->
-              <div class="swiper-slide  w-auto">
+              <div class="swiper-slide w-auto">
                 <a class="btn rounded-2 swiper-item" href="#">軟體開發工具</a>
               </div>
               <!-- 12 -->
-              <div class="swiper-slide  w-auto">
+              <div class="swiper-slide w-auto">
                 <a class="btn rounded-2 swiper-item" href="#">無程式碼開發</a>
               </div>
             </div>
           </div>
-          <div class="course-list-swiper-button-next p-3 z-3">
-            <span class="material-symbols-outlined"> chevron_right </span>
+          <div class="course-list-swiper-button-next p-3 z-3 lh-1 d-none d-sm-block">
+            <span class="material-symbols-outlined lh-1"> chevron_right </span>
           </div>
         </div>
       </section>
@@ -95,474 +95,31 @@
 
       <!-- 課程導覽列 & 課程卡片 Swiper -->
       <!-- section-2 -->
-      <section class="section-2-bg">
-        <div class="container">
-          <div class="row">
-            <!-- 導覽列 -->
-            <ul class="nav gap-7 border-bottom px-2 mb-m mb-md-xl">
-              <li class="nav-item">
-                <a
-                  class="course-nav-link course-nav-item-bottom-line course-nav-link-active"
-                  aria-current="page"
-                  href="#"
-                  >最熱門</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="course-nav-link course-nav-item-bottom-line" href="#"
-                  >最新課程</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="course-nav-link course-nav-item-bottom-line" href="#"
-                  >話題最高</a
-                >
-              </li>
-            </ul>
-            <!-- 課程卡片 Swiper -->
-            <div class="col-12">
-              <div class="swiper course-card-swiper">
-                <div class="swiper-wrapper position-relative">
-                  <!-- course-card-1 -->
-                  <div class="swiper-slide pb-m pb-md-xl">
-                    <a class="card-link" href="#">
-                      <div class="card position-relative">
-                        <!-- 定位標籤 -->
-                        <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7 d-none d-md-block"
-                          style="max-width: 101px; top: 16px; left: 16px"
-                        >
-                          <div class="d-flex">
-                            <span
-                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
-                              >限時 8 折</span
-                            ><img
-                              style="width: 16px; height: 16px"
-                              src="/assets/images/icons/ic_fire.png"
-                              alt="fire"
-                            />
-                          </div>
-                        </div>
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-5.png"
-                          alt=""
-                        />
-                        <!-- card-title & card-body -->
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            小白也會！從零開始學習 Python 程式設計
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-2 -->
-                  <div class="swiper-slide pb-m pb-md-xl">
-                    <a class="card-link" href="#">
-                      <div class="card card-tag position-relative">
-                        <!-- 定位標籤 -->
-                        <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7"
-                          style="max-width: 101px; top: 16px; left: 16px"
-                        >
-                          <div class="d-flex">
-                            <span
-                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
-                              >限時 8 折</span
-                            ><img
-                              style="width: 16px; height: 16px"
-                              src="/assets/images/icons/ic_fire.png"
-                              alt="fire"
-                            />
-                          </div>
-                        </div>
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-6.png"
-                          alt=""
-                        />
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            全面掌握 JavaScript 開發技術
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-3 -->
-                  <div class="swiper-slide pb-m pb-md-xl">
-                    <a class="card-link" href="#">
-                      <div class="card">
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-7.png"
-                          alt=""
-                        />
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            HTML & CSS 網頁設計基礎教程
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-4 -->
-                  <div class="swiper-slide pb-m pb-md-xl">
-                    <a class="card-link" href="#">
-                      <div class="card">
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-8.png"
-                          alt=""
-                        />
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            更進一步！深入學習 Node.js 與後端開發
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-5 -->
-                  <div class="swiper-slide pb-m pb-md-xl">
-                    <a class="card-link" href="#">
-                      <div class="card position-relative">
-                        <!-- 定位標籤 -->
-                        <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7 d-none d-md-block"
-                          style="max-width: 101px; top: 16px; left: 16px"
-                        >
-                          <div class="d-flex">
-                            <span
-                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
-                              >限時 8 折</span
-                            ><img
-                              style="width: 16px; height: 16px"
-                              src="/assets/images/icons/ic_fire.png"
-                              alt="fire"
-                            />
-                          </div>
-                        </div>
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-5.png"
-                          alt=""
-                        />
-                        <!-- card-title & card-body -->
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            小白也會！從零開始學習 Python 程式設計
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- course-card-6 -->
-                  <div class="swiper-slide pb-m pb-md-xl">
-                    <a class="card-link" href="#">
-                      <div class="card card-tag position-relative">
-                        <!-- 定位標籤 -->
-                        <div
-                          class="py-2 px-3 bg-alert-L position-absolute rounded-7"
-                          style="max-width: 101px; top: 16px; left: 16px"
-                        >
-                          <div class="d-flex">
-                            <span
-                              class="text-alert text-nowrap align-text-bottom fs-sm fw-bold me-1"
-                              >限時 8 折</span
-                            ><img
-                              style="width: 16px; height: 16px"
-                              src="/assets/images/icons/ic_fire.png"
-                              alt="fire"
-                            />
-                          </div>
-                        </div>
-                        <img
-                          class="rounded-top-4"
-                          src="/assets/images/course-6.png"
-                          alt=""
-                        />
-                        <div class="p-4">
-                          <!-- card-title -->
-                          <h4 class="fs-6 fw-bold mb-4">
-                            全面掌握 JavaScript 開發技術
-                          </h4>
-                          <!-- card-body -->
-                          <div class="course-card-body">
-                            <section class="d-flex align-items-center">
-                              <img
-                                class="course-card-avatar object-fit-cover"
-                                src="/assets/images/avatar-2.png"
-                                alt="Kelly Hsu"
-                              />
-                              <p class="ms-2 text-gray-8">Kelly Hsu</p>
-                            </section>
-                            <section>
-                              <p class="text-primary fs-6 fw-bold-700">
-                                NT$ 2,480
-                              </p>
-                              <p class="text-style-1 fs-sm text-end">
-                                NT$ 3,200
-                              </p>
-                            </section>
-                          </div>
-                        </div>
-                        <!-- card-footer -->
-                        <div class="course-card-footer rounded-bottom-4">
-                          <section>
-                            <p
-                              class="bg-gray-4 py-1 px-3 text-gray-8 rounded-7 fs-sm"
-                              style="max-width: 81px"
-                            >
-                              程式開發
-                            </p>
-                            <p class="mt-1 text-gray-8 fs-sm">
-                              已有 420 位同學加入
-                            </p>
-                          </section>
-                          <section>
-                            <p>
-                              <i
-                                class="bi bi-star-fill text-warning align-bottom"
-                              ></i
-                              ><span class="fs-sm text-dark mx-1">4.0</span
-                              ><span class="text-style-2 fs-sm">(333)</span>
-                            </p>
-                          </section>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Swiper-button -->
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container d-flex justify-content-between">
-          <div class="course-swiper-button-prev">
-            <i class="bi bi-arrow-left-short fs-5 course-swiper-button-arrow-left-short"></i>
-          </div>
-          <div class="course-swiper-button-next">
-            <i class="bi bi-arrow-right-short fs-5 course-swiper-button-arrow-right-short"></i>
-          </div>
+      <section class="popularCourses pt-m">
+        <!-- 導覽列 -->
+        <ul class="container nav gap-7 border-bottom px-2">
+          <li class="nav-item">
+            <a
+              class="course-nav-link course-nav-item-bottom-line course-nav-link-active"
+              aria-current="page"
+              href="#"
+              >最熱門</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="course-nav-link course-nav-item-bottom-line" href="#"
+              >最新課程</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="course-nav-link course-nav-item-bottom-line" href="#"
+              >話題最高</a
+            >
+          </li>
+        </ul>
+        <!-- 課程卡片 Swiper -->
+        <div class="py-m py-lg-xl ">
+          <%- include('./layout/courseCardSwiper'); -%>
         </div>
       </section>
 
@@ -1127,11 +684,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
-                  <img
-                    class="rounded-top-4"
-                    src="/assets/images/course-7.png"
-                    alt=""
-                  />
+                  <img class="rounded-top-4" src="/assets/images/course-7.png" alt=""/>
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
@@ -1703,11 +1256,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
-                  <img
-                    class="rounded-top-4"
-                    src="/assets/images/course-7.png"
-                    alt=""
-                  />
+                  <img class="rounded-top-4" src="/assets/images/course-7.png" alt=""/>
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
@@ -2279,11 +1828,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
-                  <img
-                    class="rounded-top-4"
-                    src="/assets/images/course-7.png"
-                    alt=""
-                  />
+                  <img class="rounded-top-4" src="/assets/images/course-7.png" alt=""/>
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
@@ -2855,11 +2400,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
-                  <img
-                    class="rounded-top-4"
-                    src="/assets/images/course-7.png"
-                    alt=""
-                  />
+                  <img class="rounded-top-4" src="/assets/images/course-7.png" alt=""/>
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
@@ -3431,11 +2972,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
-                  <img
-                    class="rounded-top-4"
-                    src="/assets/images/course-7.png"
-                    alt=""
-                  />
+                  <img class="rounded-top-4" src="/assets/images/course-7.png" alt=""/>
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
@@ -3839,11 +3376,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 d-none d-md-block">
               <a class="card-link d-none d-md-block" href="#">
                 <div class="card">
-                  <img
-                    class="rounded-top-4"
-                    src="/assets/images/course-7.png"
-                    alt=""
-                  />
+                  <img class="rounded-top-4" src="/assets/images/course-7.png" alt=""/>
                   <div class="p-4">
                     <!-- card-title -->
                     <h4 class="fs-6 fw-bold mb-4">
