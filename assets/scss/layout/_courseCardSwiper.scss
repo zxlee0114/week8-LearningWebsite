@@ -1,0 +1,118 @@
+// 列表 & course-cards-swiper
+// Swiper-button
+// .course-swiper-button-next {
+//     right: -24px;
+//     display: inline-block;
+//     width: 56px;
+//     height: 56px;
+//     padding: 16px;
+//     background-color: $white;
+//     border-radius: 12px;
+//     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+//     &:hover {
+//         background-color: $primary;
+//     }
+
+//     @media screen and (max-width: 767px) {
+//         display: none;
+//     }
+// }
+  
+// .course-swiper-button-prev {
+//     left: -24px;
+//     display: inline-block;
+//     width: 56px;
+//     height: 56px;
+//     padding: 16px;
+//     background-color: $white;
+//     border-radius: 12px;
+//     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+//     &:hover {
+//         background-color: $primary;
+//     }
+
+//     @media screen and (max-width: 767px) {
+//         display: none;
+//     }
+// }
+  
+// .course-swiper-button-arrow-right-short {
+//     color: $primary;
+//     &:hover {
+//         color: $white;
+//     }
+// }
+
+// .course-swiper-button-arrow-left-short {
+//     color: $primary;
+//     &:hover {
+//         color: $white;
+//     }
+// }
+
+
+.course-card-swiper-wrap.container {
+    padding-bottom: 40px;
+    margin-bottom: -40px;
+    @media (min-width:992px) {
+        max-width: 992px;
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-bottom: 80px;
+        margin-bottom: -80px;
+    }
+    @media (min-width:1200px) {
+        max-width: 1172px;
+    }
+    @media (min-width:1400px) {
+        max-width: 1352px;
+    }
+}
+
+.swiper.course-card-swiper {
+    @media (min-width:992px) {
+        margin: 0 -28px !important; 
+        padding: 0 28px !important;
+    }
+}
+
+.swiper-button-prev.course-swiper-button-prev {
+    &::after {
+        content: "";
+        @media (min-width:992px) {
+            content: "\e5c4";
+            font-family: "Material Symbols Outlined";
+            font-size: 24px;
+            padding: 1rem;
+            background: $white;
+            border-radius: 12px;
+            box-shadow: 0px 10px 15px -3px #0000001A;
+            margin-left: 16px; // new
+        }
+    }
+    &:hover::after {
+        color: $white;
+        background: $primary;
+    }
+}
+
+
+.swiper-button-next.course-swiper-button-next {
+    &::after {
+        content: "";
+        @media (min-width:992px) {
+            content: "\e5c8";
+            font-family: "Material Symbols Outlined";
+            font-size: 24px;
+            padding: 1rem;
+            background: $white;
+            border-radius: 12px;
+            box-shadow: 0px 10px 15px -3px #0000001A;
+            margin-right: 16px; // new
+        }
+    }
+    &:hover::after {
+        color: $white;
+        background: $primary;
+    }
+}
