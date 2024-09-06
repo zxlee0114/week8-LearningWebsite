@@ -1,0 +1,39 @@
+.hot-bg {
+    background-image: url(../images/deco/flower-2.png);
+    background-repeat: no-repeat;
+    background-position: -100px 0;
+    background-size: 200px auto;
+    @media (min-width:576px) {
+        background-size: 300px auto;
+    }
+    @media (min-width:768px) {
+        background-size: 400px auto;
+    }
+    @media (min-width:992px) {
+        background-size: 500px auto;
+    }
+}
+.teachers-img {
+    width: 291px;
+    height: 356px;
+    object-fit: cover;
+    @media (min-width: 768px) {
+        width: 336px;
+        height: 400px;
+    }
+}
+.teachers-bg {
+    background-image: url(../images/deco/line-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.teachers-title-deco {
+    top:  -24px;
+    left: -24px;
+    z-index: -1;
+}
+.popularCourses-bg {
+    background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+}
+
+
