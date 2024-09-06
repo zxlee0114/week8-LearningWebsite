@@ -45,8 +45,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    right: 24px;
     top: 100px;
+    right: 24px;
     z-index: 1;
 
     @media screen and (max-width: 992px) {
@@ -105,15 +105,6 @@
     background-color: $primary;
     color: $white;
   }
-}
-
-// 列表 & course-cards-swiper
-// section-2
-.section-2-bg {
-  padding-top: 40px;
-  position: relative;
-  z-index: 2;
-  background-color: $white;
 }
 
 // 課程導覽列
@@ -191,71 +182,6 @@
 
 .text-style-2 {
   color: rgba(128, 128, 128, 1);
-}
-
-// Swiper-button
-.course-swiper-button-next {
-  display: inline-block;
-  width: 56px;
-  height: 56px;
-  padding: 16px;
-  background-color: $white;
-  border-radius: 12px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  &:hover {
-    background-color: $primary;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.course-swiper-button-prev {
-  display: inline-block;
-  width: 56px;
-  height: 56px;
-  padding: 16px;
-  background-color: $white;
-  border-radius: 12px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  &:hover {
-    background-color: $primary;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.course-swiper-button-arrow-right-short {
-  color: $primary;
-  &:hover {
-    color: $white;
-  }
-}
-
-.course-swiper-button-arrow-left-short {
-  color: $primary;
-  &:hover {
-    color: $white;
-  }
-}
-
-.course-swiper-button-next-position {
-  position: absolute;
-  top: 50%;
-  right: -28px;
-  z-index: 1;
-  transform: translate(0, -50%);
-}
-
-.course-swiper-button-prev-position {
-  position: absolute;
-  top: 50%;
-  left: -28px;
-  z-index: 1;
-  transform: translate(0, -50%);
 }
 
 // 熱門主題
