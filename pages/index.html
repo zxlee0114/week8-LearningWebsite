@@ -10,8 +10,8 @@
     <%- include('./layout/header'); -%>
 
     <!-- HERO 缺 裝飾、熱銷課程 🔥 -->
-    <section class="heroSwiperWrap">
-      <div class="swiper heroSwiper position-relative">
+    <section class="heroSwiperWrap container">
+      <div class="swiper heroSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide position-relativ">
             <img src="../assets/images/hero-1.png" alt="" class="img-fluid mb-50 mb-md-0 rounded-md-6">
@@ -56,10 +56,12 @@
             </a>
           </div>
         </div>
-        <div class="heroSwiper-button-prev position-absolute top-50 translate-middle-y z-1"></div>
-        <div class="heroSwiper-button-next position-absolute top-50 translate-middle-y z-1"></div>
+        <!-- position-absolute top-50 translate-middle-y z-1 -->
+        <div class="swiper-button-prev heroSwiper-button-prev"></div>
+        <div class="swiper-button-next heroSwiper-button-next"></div>
       </div>
     </section>
+
 
     <!-- Hot 完成--> 
     <section class="hot hot-bg">
@@ -215,7 +217,17 @@
     </section>
 
     <!-- popularCourses 熱門課程 -->
-    <section class="popularCourses popularCourses-bg"></section>
+    <section class="popularCourses popularCourses-bg position-relative flower-outline-deco">
+      <div class="container py-xl py-md-XHuge">
+        <div class="text-md-center mb-6 mb-lg-m">
+          <h2 class="fs-1 fw-bolder">看看大家<br class="d-block d-md-none">都買了什麼</h2>
+          <p class="fs-6">熱銷課程一次看！✨</p>
+        </div>
+        <div class="position-relative z-2">
+          <%- include('./layout/courseCardSwiper'); -%>
+        </div>
+      </div>
+    </section>
 
     <!-- category 一探究竟。 完成 -->
     <%- include('./layout/category'); -%>
@@ -235,7 +247,7 @@
                 <img src="../assets/images/teacher-3.png" alt="Mr. Robert" class="img-fluid teachers-img">
               </div>
               <div class="pe-6 pe-md-7" style="padding-top: 300px;">
-                <div class="bg-white rounded p-6" style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                <div class="bg-white rounded p-6 text-start" style="box-shadow: 0px 25px 50px -12px #0000001F;">
                   <h5 class="fs-6">Mr. Robert</h5>
                   <div class="py-6">
                     <div class="d-flex align-items-center mb-2">
@@ -257,7 +269,7 @@
                 <img src="../assets/images/teacher-1.png" alt="Kelly Beck" class="img-fluid teachers-img">
               </div>
               <div class="pe-6 pe-md-7 h-100" style="padding-top: 300px;">
-                <div class="bg-white rounded p-6" style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                <div class="bg-white rounded p-6 text-start" style="box-shadow: 0px 25px 50px -12px #0000001F;">
                   <h5 class="fs-6">Kelly Beck</h5>
                   <div class="py-6">
                     <div class="d-flex align-items-center mb-2">
@@ -279,7 +291,7 @@
                 <img src="../assets/images/teacher-2.png" alt="K. Lee" class="img-fluid teachers-img">
               </div>
               <div class="pe-6 pe-md-7 h-100" style="padding-top: 300px;">
-                <div class="bg-white rounded p-6" style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                <div class="bg-white rounded p-6 text-start" style="box-shadow: 0px 25px 50px -12px #0000001F;">
                   <h5 class="fs-6">K. Lee</h5>
                   <div class="py-6">
                     <div class="d-flex align-items-center mb-2">

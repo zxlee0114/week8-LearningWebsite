@@ -35,5 +35,19 @@
 .popularCourses-bg {
     background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
 }
-
+.flower-outline-deco::after {
+    @media (min-width:768px) {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        width: 480px;
+        height: 480px;
+        background-image: url(/assets/images/deco/flower-3.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        left: -240px;
+        bottom: 114px;
+    }
+}
 
